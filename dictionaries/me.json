@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "title1": "Najbolje iz prirode za",
+    "title2": "premium proizvode",
+    "subtitle": "Sa više od 20 godina iskustva, povezujemo tradiciju i inovaciju, donoseći vam premium sirovine i stručnu podršku za vaš uspjeh",
+    "products": "44+ Proizvoda",
+    "partners": "10 Partnera",
+    "clients": "600+ Klijenata"
+  },
+  "after20": {
+    "title": "Nakon 20 Godina",
+    "paragraph": "Mi smo tim iskusnih profesionalaca koji su posvećeni pružanju najbolje moguće usluge našim klijentima. U poslu smo više od 20 godina i ponosni smo što možemo reći da imamo mnogo zadovoljnih kupaca.",
+    "link": "O Nama"
+  },
+  "footer": {
+    "addressTitle": "Adresa",
+    "contactTitle": "Kontakt",
+    "emailTitle": "Email",
+    "websiteTitle": "Web stranica",
+    "copyright": "Sva prava zadržana."
+  },
+  "blogs": {
+    "title": "Najnovije sa našeg bloga",
+    "readMore": "Pročitaj više",
+    "blog1Title": "Važnost kvalitetnih sirovina",
+    "blog1Excerpt": "Saznajte zašto su kvalitetne sirovine ključne za premium proizvode i kako utiču na uspjeh vašeg poslovanja.",
+    "blog2Title": "Održive prakse nabavke",
+    "blog2Excerpt": "Otkrijte našu predanost održivoj nabavci i kako to koristi i okolini i vašim proizvodima.",
+    "blog3Title": "Trendovi u industriji 2024",
+    "blog3Excerpt": "Ostanite u toku sa našom analizom najnovijih trendova u industriji sirovina."
+  },
+  "founder": {
+    "name": "Luka Rakcevic",
+    "position": "CEO i Osnivač",
+    "quote": "Više od dvije decenije posvećeni smo pružanju najkvalitetnijih sirovina našim partnerima. Naš uspjeh je izgrađen na tri temelja: kvalitetu, održivosti i povjerenju. Svakog dana nastojimo nadmašiti očekivanja i održati najviše standarde u našoj industriji."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "title1": "The best from nature for",
+    "title2": "premium products",
+    "subtitle": "With over 20 years of experience, we connect tradition and innovation, bringing you premium raw materials and expert support for your success",
+    "products": "44+ Products",
+    "partners": "10 Partners",
+    "clients": "600+ Clients"
+  },
+  "after20": {
+    "title": "After 20 Years",
+    "paragraph": "We are a team of experienced professionals who are dedicated to providing the best possible service to our clients. We have been in the business for over 20 years and we are proud to say that we have a lot of satisfied customers.",
+    "link": "About Us"
+  },
+  "footer": {
+    "addressTitle": "Address",
+    "contactTitle": "Contact",
+    "emailTitle": "Email",
+    "websiteTitle": "Website",
+    "copyright": "All rights reserved."
+  },
+  "blogs": {
+    "title": "Latest from Our Blog",
+    "readMore": "Read More",
+    "blog1Title": "The Importance of Quality Raw Materials",
+    "blog1Excerpt": "Learn why quality raw materials are crucial for premium products and how they impact your business success.",
+    "blog2Title": "Sustainable Sourcing Practices",
+    "blog2Excerpt": "Discover our commitment to sustainable sourcing and how it benefits both the environment and your products.",
+    "blog3Title": "Industry Trends 2024",
+    "blog3Excerpt": "Stay ahead of the curve with our analysis of the latest trends in the raw materials industry."
+  },
+  "founder": {
+    "name": "Luka Rakcevic",
+    "position": "CEO & Founder",
+    "quote": "For over two decades, we've been committed to bringing the finest raw materials to our partners. Our success is built on three pillars: quality, sustainability, and trust. Every day, we strive to exceed expectations and maintain the highest standards in our industry."
+  }
+}

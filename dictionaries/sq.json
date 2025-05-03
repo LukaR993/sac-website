@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "title1": "Më të mirat nga ",
+    "title2": " natyra për produkte të shkëlqyera",
+    "subtitle": "Me mbi 20 vite përvojë, lidhim traditën dhe inovacionin, duke sjellë lëndë të para cilësore dhe mbështetje profesionale për suksesin tuaj",
+    "products": "44+ Produkte",
+    "partners": "10 Partnerë",
+    "clients": "600+ Klientë"
+  },
+  "after20": {
+    "title": "Pas 20 viteve",
+    "paragraph": "Ne jemi një ekip i profesionistëve të kualifikuar, që janë të dedikuar të japin një shërbim të mbledhësëm më të mirë për klientët tona. Kemi mbi 20 vite përvojë dhe shumë klientë të kënaqura.",
+    "link": "Rreth nesh"
+  },
+  "footer": {
+    "addressTitle": "Adresa",
+    "contactTitle": "Kontakti",
+    "emailTitle": "Email",
+    "websiteTitle": "Faqja e internetit",
+    "copyright": "Të gjitha të drejtat e rezervuara."
+  },
+  "blogs": {
+    "title": "Më të rejat nga blogu ynë",
+    "readMore": "Lexo më shumë",
+    "blog1Title": "Rëndësia e lëndëve të para cilësore",
+    "blog1Excerpt": "Mësoni pse lëndët e para cilësore janë thelbësore për produktet premium dhe si ato ndikojnë në suksesin e biznesit tuaj.",
+    "blog2Title": "Praktikat e qëndrueshme të prokurimit",
+    "blog2Excerpt": "Zbuloni angazhimin tonë për prokurimin e qëndrueshëm dhe si kjo përfiton si mjedisin ashtu edhe produktet tuaja.",
+    "blog3Title": "Trendet e industrisë 2024",
+    "blog3Excerpt": "Qëndroni përpara me analizën tonë të trendeve më të fundit në industrinë e lëndëve të para."
+  },
+  "founder": {
+    "name": "Luka Rakcevic",
+    "position": "CEO dhe Themelues",
+    "quote": "Për më shumë se dy dekada, jemi të përkushtuar të sjellim lëndët e para më të mira për partnerët tanë. Suksesi ynë është ndërtuar mbi tre shtylla: cilësinë, qëndrueshmërinë dhe besimin. Çdo ditë, përpiqemi të tejkalojmë pritshmëritë dhe të mbajmë standardet më të larta në industrinë tonë."
+  }
+}
