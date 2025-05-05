@@ -26,13 +26,12 @@ const localeNames = {
   sq: "Albanski",
   ru: "Ruski",
 };
-
 const navItems  = {
     en:[
-        { name: "About us", href: "/o-nama" },
-        { name: "Products", href: "/proizvodi" },
-        { name: "Partners", href: "/partneri" },
-        { name: "Contact", href: "/kontakt" },
+        { name: "About us", href: "/about-us" },
+        { name: "Products", href: "/products" },
+        { name: "Partners", href: "/partners" },
+        { name: "Contact", href: "/contact" },
     ],
     me:[
         { name: "O nama", href: "/o-nama" },
@@ -41,16 +40,16 @@ const navItems  = {
         { name: "Kontakt", href: "/kontakt" },
     ],
     sq:[    
-        { name: "Rreth nesh", href: "/o-nama" },
-        { name: "Produktet", href: "/proizvodi" },
-        { name: "Partnerët", href: "/partneri" },
+        { name: "Rreth nesh", href: "/rreth-nesh" },
+        { name: "Produktet", href: "/produktet" },
+        { name: "Partnerët", href: "/partneret" },
         { name: "Kontakt", href: "/kontakt" },
     ],
     ru:[
-        { name: "О нас", href: "/o-nama" },
-        { name: "Продукты", href: "/proizvodi" },
-        { name: "Партнеры", href: "/partneri" },
-        { name: "Контакты", href: "/kontakt" },
+        { name: "О нас", href: "/o-nas" },
+        { name: "Продукты", href: "/produkty" },
+        { name: "Партнеры", href: "/partnery" },
+        { name: "Контакты", href: "/kontakty" },
     ]
 }
 

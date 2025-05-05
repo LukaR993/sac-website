@@ -37,6 +37,7 @@ const logos = [
 const TrustedBy: React.FC = () => {
   return (
     <section id="company" className="flex flex-col items-center justify-center gap-10  w-full relative px-4 md:px-0 py-8 md:py-16">
+     <h2 className="text-2xl font-bold">Trusted by</h2>
       <div className="grid w-full  grid-cols-2 md:grid-cols-4 overflow-hidden border border-border items-center justify-center z-20">
         {logos.map((logo, index) => (
           <Link

@@ -33,5 +33,126 @@
     "name": "Luka Rakcevic",
     "position": "CEO dhe Themelues",
     "quote": "Për më shumë se dy dekada, jemi të përkushtuar të sjellim lëndët e para më të mira për partnerët tanë. Suksesi ynë është ndërtuar mbi tre shtylla: cilësinë, qëndrueshmërinë dhe besimin. Çdo ditë, përpiqemi të tejkalojmë pritshmëritë dhe të mbajmë standardet më të larta në industrinë tonë."
+  },
+  "about": {
+    "mission": {
+      "title": "Misioni Ynë",
+      "description": "Jemi të dedikuar të ofrojmë lëndët e para me cilësinë më të lartë duke ruajtur praktikat e qëndrueshme dhe duke ndërtuar marrëdhënie afatgjata me partnerët tanë.",
+      "quality": {
+        "title": "Cilësia",
+        "description": "Materiale premium nga furnizues të besueshëm"
+      },
+      "sustainability": {
+        "title": "Qëndrueshmëria",
+        "description": "Praktika miqësore me mjedisin dhe prokurim i përgjegjshëm"
+      },
+      "innovation": {
+        "title": "Inovacioni",
+        "description": "Përmirësim i vazhdueshëm dhe zgjidhje moderne"
+      },
+      "trust": {
+        "title": "Besimi",
+        "description": "Partneritete të besueshme dhe operacione transparente"
+      }
+    },
+    "values": {
+      "title": "Vlerat Tona",
+      "excellence": {
+        "title": "Ekselenca",
+        "description": "Ne përpiqemi për ekselencë në gjithçka që bëjmë, nga cilësia e produktit deri te shërbimi ndaj klientit."
+      },
+      "sustainability": {
+        "title": "Qëndrueshmëria",
+        "description": "Jemi të përkushtuar ndaj praktikave të qëndrueshme që mbrojnë mjedisin tonë dhe brezat e ardhshëm."
+      },
+      "partnership": {
+        "title": "Partneriteti",
+        "description": "Ne ndërtojmë marrëdhënie të forta, të qëndrueshme me partnerët tanë bazuar në besim dhe sukses të përbashkët."
+      }
+    },
+    "cta": {
+      "title": "Gati për Partneritet?",
+      "description": "Bashkohuni me ne në misionin tonë për të ofruar lëndët e para me cilësinë më të lartë duke ruajtur praktikat e qëndrueshme.",
+      "button": "Na Kontaktoni"
+    }
+  },
+  "products": {
+    "title": "Produktet Tona Premium",
+    "description": "Zbuloni gamën tonë të gjerë të lëndëve të para me cilësi të lartë, të zgjedhura dhe të përpunuara me kujdes për nevojat tuaja specifike.",
+    "learnMore": "Mëso Më Shumë",
+    "items": [
+      {
+        "name": "Bimë Medicinale Organike",
+        "description": "Lëndë të para organike me cilësi premium nga ferma të qëndrueshme.",
+        "image": "/img/products/herbs.jpg"
+      },
+      {
+        "name": "Ekstrakte Natyrale",
+        "description": "Ekstrakte të pastra dhe efektive për aplikime të ndryshme.",
+        "image": "/img/products/extracts.jpg"
+      },
+      {
+        "name": "Vajra Thelbësorë",
+        "description": "Vajra thelbësorë me cilësi të lartë të nxjerra me metoda tradicionale.",
+        "image": "/img/products/oils.jpg"
+      }
+    ]
+  },
+  "partners": {
+    "title": "Partnerët Tanë të Besueshëm",
+    "description": "Punojmë me udhëheqës të industrisë dhe kompani inovative për të siguruar ekselencë në çdo projekt.",
+    "visitWebsite": "Vizito Faqen",
+    "items": [
+      {
+        "name": "Global Herbs Ltd",
+        "description": "Furnizues kryesor i përbërësve premium bimore dhe botanikë.",
+        "logo": "/img/partners/global-herbs.png",
+        "website": "https://globalherbs.com"
+      },
+      {
+        "name": "Natural Solutions",
+        "description": "Furnizues inovativ i zgjidhjeve bazuar në përbërës natyralë.",
+        "logo": "/img/partners/natural-solutions.png",
+        "website": "https://naturalsolutions.com"
+      },
+      {
+        "name": "Eco Extracts",
+        "description": "Specialistë për teknologjitë e qëndrueshme të ekstraksionit.",
+        "logo": "/img/partners/eco-extracts.png",
+        "website": "https://ecoextracts.com"
+      }
+    ],
+    "becomePartner": {
+      "title": "Bëhu Partneri Ynë",
+      "description": "Bashkohuni me rrjetin tonë të partnerëve të besueshëm dhe zhvilloni biznesin tuaj me ne.",
+      "button": "Bëhu Partner"
+    }
+  },
+  "contacts": {
+    "title": "Na Kontaktoni",
+    "address": {
+      "title": "Lokacioni Ynë",
+      "value": "Rruga e Biznesit 123, Podgoricë, Mali i Zi"
+    },
+    "phone": {
+      "title": "Telefoni",
+      "value": "+382 20 123 456"
+    },
+    "email": {
+      "title": "Email",
+      "value": "info@company.com"
+    },
+    "website": {
+      "title": "Faqja e Internetit",
+      "value": "www.company.com"
+    },
+    "form": {
+      "title": "Na Dërgoni një Mesazh",
+      "name": "Emri Juaj",
+      "email": "Email Juaj",
+      "subject": "Subjekti",
+      "message": "Mesazhi Juaj",
+      "submit": "Dërgo"
+    }
   }
 }

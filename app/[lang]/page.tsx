@@ -25,7 +25,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
      
 
       <BlogsSection locale={lang as Locale} />
-      <FounderWords locale={lang as Locale} />
+      {/* <FounderWords locale={lang as Locale} /> */}
       
     </main>
   );

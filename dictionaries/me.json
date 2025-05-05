@@ -33,5 +33,126 @@
     "name": "Luka Rakcevic",
     "position": "CEO i Osnivač",
     "quote": "Više od dvije decenije posvećeni smo pružanju najkvalitetnijih sirovina našim partnerima. Naš uspjeh je izgrađen na tri temelja: kvalitetu, održivosti i povjerenju. Svakog dana nastojimo nadmašiti očekivanja i održati najviše standarde u našoj industriji."
+  },
+  "about": {
+    "mission": {
+      "title": "Naša Misija",
+      "description": "Posvećeni smo pružanju najkvalitetnijih sirovina uz održive prakse i izgradnju dugoročnih partnerstava.",
+      "quality": {
+        "title": "Kvalitet",
+        "description": "Premium materijali od pouzdanih dobavljača"
+      },
+      "sustainability": {
+        "title": "Održivost",
+        "description": "Ekološki prihvatljive prakse i odgovorna nabavka"
+      },
+      "innovation": {
+        "title": "Inovacija",
+        "description": "Kontinuirano poboljšanje i moderna rješenja"
+      },
+      "trust": {
+        "title": "Povjerenje",
+        "description": "Pouzdana partnerstva i transparentne operacije"
+      }
+    },
+    "values": {
+      "title": "Naše Vrijednosti",
+      "excellence": {
+        "title": "Izvrsnost",
+        "description": "Težimo izvrsnosti u svemu što radimo, od kvaliteta proizvoda do korisničke usluge."
+      },
+      "sustainability": {
+        "title": "Održivost",
+        "description": "Posvećeni smo održivim praksama koje štite našu okolinu i buduće generacije."
+      },
+      "partnership": {
+        "title": "Partnerstvo",
+        "description": "Gradimo jake, dugoročne odnose sa našim partnerima zasnovane na povjerenju i zajedničkom uspjehu."
+      }
+    },
+    "cta": {
+      "title": "Spremni za Partnerstvo?",
+      "description": "Pridružite nam se u našoj misiji pružanja najkvalitetnijih sirovina uz održive prakse.",
+      "button": "Kontaktirajte Nas"
+    }
+  },
+  "products": {
+    "title": "Naši Premium Proizvodi",
+    "description": "Otkrijte naš širok asortiman visokokvalitetnih sirovina, pažljivo odabranih i obrađenih za vaše specifične potrebe.",
+    "learnMore": "Saznaj Više",
+    "items": [
+      {
+        "name": "Organski Biljni Sirovini",
+        "description": "Premium kvalitetni organski biljni sirovini iz održivih farmi.",
+        "image": "/img/products/herbs.jpg"
+      },
+      {
+        "name": "Prirodni Ekstrakti",
+        "description": "Čisti i efikasni prirodni ekstrakti za različite primjene.",
+        "image": "/img/products/extracts.jpg"
+      },
+      {
+        "name": "Eterična Ulja",
+        "description": "Eterična ulja visokog kvaliteta dobijena tradicionalnim metodama.",
+        "image": "/img/products/oils.jpg"
+      }
+    ]
+  },
+  "partners": {
+    "title": "Naši Pouzdani Partneri",
+    "description": "Radimo sa liderima industrije i inovativnim kompanijama kako bismo osigurali izvrsnost u svakom projektu.",
+    "visitWebsite": "Posjeti Web Stranicu",
+    "items": [
+      {
+        "name": "Global Herbs Ltd",
+        "description": "Vodeći dobavljač premium biljnih i botaničkih sastojaka.",
+        "logo": "/img/partners/global-herbs.png",
+        "website": "https://globalherbs.com"
+      },
+      {
+        "name": "Natural Solutions",
+        "description": "Inovativni dobavljač rješenja baziranih na prirodnim sastojcima.",
+        "logo": "/img/partners/natural-solutions.png",
+        "website": "https://naturalsolutions.com"
+      },
+      {
+        "name": "Eco Extracts",
+        "description": "Specijalisti za održive tehnologije ekstrakcije.",
+        "logo": "/img/partners/eco-extracts.png",
+        "website": "https://ecoextracts.com"
+      }
+    ],
+    "becomePartner": {
+      "title": "Postanite Naš Partner",
+      "description": "Pridružite se našoj mreži pouzdanih partnera i razvijajte svoj posao zajedno sa nama.",
+      "button": "Postani Partner"
+    }
+  },
+  "contacts": {
+    "title": "Kontaktirajte Nas",
+    "address": {
+      "title": "Naša Lokacija",
+      "value": "Biznis ulica 123, Podgorica, Crna Gora"
+    },
+    "phone": {
+      "title": "Telefon",
+      "value": "+382 20 123 456"
+    },
+    "email": {
+      "title": "Email Adresa",
+      "value": "info@company.com"
+    },
+    "website": {
+      "title": "Web Stranica",
+      "value": "www.company.com"
+    },
+    "form": {
+      "title": "Pošaljite Nam Poruku",
+      "name": "Vaše Ime",
+      "email": "Vaš Email",
+      "subject": "Predmet",
+      "message": "Vaša Poruka",
+      "submit": "Pošalji"
+    }
   }
 }

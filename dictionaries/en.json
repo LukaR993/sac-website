@@ -33,5 +33,126 @@
     "name": "Luka Rakcevic",
     "position": "CEO & Founder",
     "quote": "For over two decades, we've been committed to bringing the finest raw materials to our partners. Our success is built on three pillars: quality, sustainability, and trust. Every day, we strive to exceed expectations and maintain the highest standards in our industry."
+  },
+  "about": {
+    "mission": {
+      "title": "Our Mission",
+      "description": "We are dedicated to providing the highest quality raw materials while maintaining sustainable practices and building long-lasting relationships with our partners.",
+      "quality": {
+        "title": "Quality",
+        "description": "Premium materials sourced from trusted suppliers"
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "Eco-friendly practices and responsible sourcing"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Continuous improvement and modern solutions"
+      },
+      "trust": {
+        "title": "Trust",
+        "description": "Reliable partnerships and transparent operations"
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "excellence": {
+        "title": "Excellence",
+        "description": "We strive for excellence in everything we do, from product quality to customer service."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "We are committed to sustainable practices that protect our environment and future generations."
+      },
+      "partnership": {
+        "title": "Partnership",
+        "description": "We build strong, lasting relationships with our partners based on trust and mutual success."
+      }
+    },
+    "cta": {
+      "title": "Ready to Partner With Us?",
+      "description": "Join us in our mission to provide the highest quality raw materials while maintaining sustainable practices.",
+      "button": "Get in Touch"
+    }
+  },
+  "products": {
+    "title": "Our Premium Products",
+    "description": "Discover our extensive range of high-quality raw materials, carefully sourced and processed to meet your specific needs.",
+    "learnMore": "Learn More",
+    "items": [
+      {
+        "name": "Organic Herbs",
+        "description": "Premium quality organic herbs sourced from sustainable farms.",
+        "image": "/img/products/herbs.jpg"
+      },
+      {
+        "name": "Natural Extracts",
+        "description": "Pure and potent natural extracts for various applications.",
+        "image": "/img/products/extracts.jpg"
+      },
+      {
+        "name": "Essential Oils",
+        "description": "High-grade essential oils extracted using traditional methods.",
+        "image": "/img/products/oils.jpg"
+      }
+    ]
+  },
+  "partners": {
+    "title": "Our Trusted Partners",
+    "description": "We work with industry leaders and innovative companies to deliver excellence in every project.",
+    "visitWebsite": "Visit Website",
+    "items": [
+      {
+        "name": "Global Herbs Ltd",
+        "description": "Leading supplier of premium herbs and botanicals.",
+        "logo": "/img/partners/global-herbs.png",
+        "website": "https://globalherbs.com"
+      },
+      {
+        "name": "Natural Solutions",
+        "description": "Innovative natural ingredient solutions provider.",
+        "logo": "/img/partners/natural-solutions.png",
+        "website": "https://naturalsolutions.com"
+      },
+      {
+        "name": "Eco Extracts",
+        "description": "Sustainable extraction technology specialists.",
+        "logo": "/img/partners/eco-extracts.png",
+        "website": "https://ecoextracts.com"
+      }
+    ],
+    "becomePartner": {
+      "title": "Become Our Partner",
+      "description": "Join our network of trusted partners and grow your business with us.",
+      "button": "Partner With Us"
+    }
+  },
+  "contacts": {
+    "title": "Get in Touch",
+    "address": {
+      "title": "Our Location",
+      "value": "123 Business Street, Podgorica, Montenegro"
+    },
+    "phone": {
+      "title": "Phone Number",
+      "value": "+382 20 123 456"
+    },
+    "email": {
+      "title": "Email Address",
+      "value": "info@company.com"
+    },
+    "website": {
+      "title": "Website",
+      "value": "www.company.com"
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message"
+    }
   }
 }

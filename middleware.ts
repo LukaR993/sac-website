@@ -28,7 +28,24 @@ function getLocale(request: NextRequest): string {
   // Default to English if no match
   return 'en';
 }
-
+const pageMaper = (currentPage:string, currentLocale:string)=>{
+  if(currentPage === 'about-us' || currentPage === 'o-nas' || currentPage === 'o-nama' || currentPage === 'rreth-nesh'){
+    return currentLocale === 'en' ? 'about-us' : currentLocale === 'me' ? 'o-nama' : currentLocale === 'sq' ? 'rreth-nesh' : 'o-nas'
+  }
+  if(currentPage === 'products' || currentPage === 'produkty' || currentPage === 'proizvodi' || currentPage === 'produktet'){
+    return currentLocale === 'en' ? 'products' : currentLocale === 'me' ? 'proizvodi' : currentLocale === 'sq' ? 'produktet' : 'produkty'
+  }
+  if(currentPage === 'partners' || currentPage === 'partnery' || currentPage === 'partneri' || currentPage === 'partneret'){
+    return currentLocale === 'en' ? 'partners' : currentLocale === 'me' ? 'partneri' : currentLocale === 'sq' ? 'partneret' : 'partnery'
+  }
+  if(currentPage === 'contacts' || currentPage === 'kontakty' || currentPage === 'kontakti' || currentPage === 'kontaktet'){
+    return currentLocale === 'en' ? 'contacts' : currentLocale === 'me' ? 'kontakti' : currentLocale === 'sq' ? 'kontaktet' : 'kontakty'
+  }
+  if(currentPage === 'contact' || currentPage === 'kontakt' || currentPage === 'kontakt' || currentPage === 'kontakt'){
+    return currentLocale === 'en' ? 'contact' : currentLocale === 'me' ? 'kontakt' : currentLocale === 'sq' ? 'kontakt' : 'kontakt'
+  }
+  
+}
 export function middleware(request: NextRequest) {
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl;
@@ -36,7 +53,20 @@ export function middleware(request: NextRequest) {
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
 
-  if (pathnameHasLocale) return;
+  if (pathnameHasLocale){
+    //If the user is on a page variation go to the appropriate page
+    const pathParts = pathname.split('/');
+    console.log(pathParts, 'PARTS')
+    const lang = pathParts[1];
+    const page = pathParts[2];
+
+    const mappedPage = pageMaper(page, lang);
+    if(mappedPage && mappedPage !== page){
+      request.nextUrl.pathname = `/${lang}/${mappedPage}`;
+      return NextResponse.redirect(request.nextUrl);
+    }
+    return NextResponse.next();
+  };
 
   // Redirect if there is no locale
   const locale = getLocale(request);

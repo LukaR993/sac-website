@@ -7,7 +7,7 @@ export default async function FounderWords({ locale }: { locale: Locale }) {
 
   return (
     <section className=" py-8 md:py-16">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 md:px-0">
         <div className=" mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="w-full md:w-1/2">
