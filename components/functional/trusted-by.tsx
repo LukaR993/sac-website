@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { Locale } from "@/types";
 
 const logos = [
   {
@@ -9,35 +10,37 @@ const logos = [
     svg: (
       <Image src="/logos/logo.svg" alt="Logo 1" width={100} height={31} />
     ),
-    url: "#",
+    url: "/partners/ireks",
   },
   {
     name: "Logo 2",
     svg: (
         <Image src="/logos/logo2.svg" alt="Logo 2" width={100} height={25} />
     ),
-    url: "#",
+    url: "/partners/BMM",
   },
   {
     name: "Logo 3",
     svg: (
       <Image src="/logos/logo3.svg" alt="Logo 3" width={200} height={64} />
     ),
-    url: "#",
+    url: "/partners/karntner",
   },
   {
     name: "Logo 4",
     svg: (
       <Image src="/logos/logo4.svg" alt="Logo 4" width={200} height={31} />
     ),
-    url: "#",
+    url: "/partners/karntner",
   },
 ];
 
-const TrustedBy: React.FC = () => {
+const TrustedBy: React.FC<{ locale: Locale }> = ({ locale }) => {
   return (
     <section id="company" className="flex flex-col items-center justify-center gap-10  w-full relative px-4 md:px-0 py-8 md:py-16">
-     <h2 className="text-2xl font-bold">Trusted by</h2>
+     <h2 className="text-2xl font-bold">{
+      locale === "en" ? "Trusted by" : locale === 'me' ? "Vjeruju nam" : locale === 'ru' ? "Доверяют нам" : locale === 'sq' ? "Vlerësojmë" : "Trusted by"
+      }</h2>
       <div className="grid w-full  grid-cols-2 md:grid-cols-4 overflow-hidden border border-border items-center justify-center z-20">
         {logos.map((logo, index) => (
           <Link

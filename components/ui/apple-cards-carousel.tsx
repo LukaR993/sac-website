@@ -27,7 +27,7 @@ interface CarouselProps {
 
 type Card = {
   src: string;
-  title: string;
+ 
   category: string;
   link: string;
   description?: string;
@@ -179,30 +179,25 @@ export const Card = ({
   return (
     <>
       <motion.button
-        layoutId={layout ? `card-${card.title}` : undefined}
+        layoutId={layout ? `card-${card.category}` : undefined}
         onClick={handleClick}
         className="group relative z-10 cursor-pointer hover:grayscale-50 transition-all duration-300 flex h-80 w-56 flex-col items-start justify-start overflow-hidden  bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900"
       >
        
         <Image
           src={card.src}
-          alt={card.title}
+         alt={card.category}
           fill
           className="absolute inset-0 z-10 object-cover"
         />
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-tr from-[#7D1C21]  to-transparent" />
         <div className="relative z-40 p-4 md:p-8">
+       
           <motion.p
-            layoutId={layout ? `category-${card.category}` : undefined}
-            className="text-left font-sans text-sm font-medium text-white md:text-base"
-          >
-            {card.category}
-          </motion.p>
-          <motion.p
-            layoutId={layout ? `title-${card.title}` : undefined}
+            layoutId={layout ? `title-${card.category}` : undefined}
             className="mt-2 max-w-xs text-left font-sans text-xl font-semibold [text-wrap:balance] text-white md:text-3xl"
           >
-            {card.title}
+            {card.category}
           </motion.p>
           {card.description && (
             <motion.p

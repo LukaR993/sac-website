@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/functional/header";
 import { Locale } from "@/types";
 import Footer from "@/components/functional/footer";
+import Providers from "@/utils/providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,12 +31,14 @@ export default async function RootLayout({
   const { lang } = await params;
   return (
     <html lang={lang}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-white antialiased`}
-      >
-        <Header locale={lang as Locale} />
-        {children}
-        <Footer locale={lang as Locale} />
+      <body className={`${geistSans.variable} ${geistMono.variable} bg-white antialiased`}>
+        <Providers>
+          <>
+            <Header locale={lang as Locale} />
+            {children}
+            <Footer locale={lang as Locale} />
+          </>
+        </Providers>
       </body>
     </html>
   );

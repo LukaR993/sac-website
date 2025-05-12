@@ -61,7 +61,7 @@ export default async function AboutUs({ locale }: { locale: Locale }) {
           </div>
         </div>
       </section>
-      <TrustedBy />
+      <TrustedBy locale={locale} />
       {/* Values Section */}
       <section className="py-8 md:py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -94,11 +94,11 @@ export default async function AboutUs({ locale }: { locale: Locale }) {
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-r from-[#7D1C21] to-[#9B2C32] text-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in">
+          <div className=" text-balance mx-auto text-center animate-fade-in">
             <h2 className="text-2xl md:text-4xl font-bold mb-6">{dict.about.cta.title}</h2>
-            <p className="text-base mb-12 max-w-2xl mx-auto leading-relaxed">{dict.about.cta.description}</p>
+            <p className="text-base mb-12  mx-auto leading-relaxed">{dict.about.cta.description}</p>
             <Link
-              href={`/${locale}/contact`}
+              href={`/${locale}/contacts`}
               className={cn(
                 buttonVariants({ size: "lg" }),
                 "bg-white text-[#7D1C21] hover:bg-gray-100 text-base     "

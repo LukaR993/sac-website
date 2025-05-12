@@ -59,10 +59,11 @@ export function middleware(request: NextRequest) {
     console.log(pathParts, 'PARTS')
     const lang = pathParts[1];
     const page = pathParts[2];
+    const singleProduct = pathParts[3];
 
     const mappedPage = pageMaper(page, lang);
     if(mappedPage && mappedPage !== page){
-      request.nextUrl.pathname = `/${lang}/${mappedPage}`;
+      request.nextUrl.pathname = `/${lang}${page ? `/${mappedPage}` : ''}` + (singleProduct ? `/${singleProduct}` : '');
       return NextResponse.redirect(request.nextUrl);
     }
     return NextResponse.next();

@@ -1,0 +1,95 @@
+/* Blog Styles */
+.blog-content {
+  @apply text-gray-800 leading-relaxed;
+}
+
+.blog-content h1 {
+  @apply text-4xl font-bold mb-6 mt-8;
+}
+
+.blog-content h2 {
+  @apply text-3xl font-bold mb-5 mt-7;
+}
+
+.blog-content h3 {
+  @apply text-2xl font-bold mb-4 mt-6;
+}
+
+.blog-content h4 {
+  @apply text-xl font-bold mb-3 mt-5;
+}
+
+.blog-content p {
+  @apply mb-4 text-lg leading-7;
+}
+
+.blog-content ul, .blog-content ol {
+  @apply mb-4 ml-6;
+}
+
+.blog-content ul {
+  @apply list-disc;
+}
+
+.blog-content ol {
+  @apply list-decimal;
+}
+
+.blog-content li {
+  @apply mb-2;
+}
+
+.blog-content a {
+  @apply text-[#7D1C21] hover:text-[#9B2C32] underline;
+}
+
+.blog-content blockquote {
+  @apply border-l-4 border-[#7D1C21] pl-4 italic my-6;
+}
+
+.blog-content img {
+  @apply rounded-lg my-6 max-w-full h-auto;
+}
+
+.blog-content pre {
+  @apply bg-gray-100 p-4 rounded-lg overflow-x-auto my-6;
+}
+
+.blog-content code {
+  @apply bg-gray-100 px-1 py-0.5 rounded text-sm;
+}
+
+.blog-content table {
+  @apply w-full border-collapse my-6;
+}
+
+.blog-content th, .blog-content td {
+  @apply border border-gray-300 px-4 py-2;
+}
+
+.blog-content th {
+  @apply bg-gray-100 font-semibold;
+}
+
+.blog-content hr {
+  @apply my-8 border-gray-200;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-content h1 {
+    @apply text-3xl;
+  }
+  
+  .blog-content h2 {
+    @apply text-2xl;
+  }
+  
+  .blog-content h3 {
+    @apply text-xl;
+  }
+  
+  .blog-content p {
+    @apply text-base;
+  }
+} 

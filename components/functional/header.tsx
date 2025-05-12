@@ -31,13 +31,13 @@ const navItems  = {
         { name: "About us", href: "/about-us" },
         { name: "Products", href: "/products" },
         { name: "Partners", href: "/partners" },
-        { name: "Contact", href: "/contact" },
+        { name: "Contact", href: "/contacts" },
     ],
     me:[
         { name: "O nama", href: "/o-nama" },
         { name: "Proizvodi", href: "/proizvodi" },
         { name: "Partneri", href: "/partneri" },
-        { name: "Kontakt", href: "/kontakt" },
+        { name: "Kontakt", href: "/kontakti" },
     ],
     sq:[    
         { name: "Rreth nesh", href: "/rreth-nesh" },

@@ -16,11 +16,11 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <HeroSection locale={lang as Locale} />
       <After20Years locale={lang as Locale} />
 
-      <CarouselComponent />
+      <CarouselComponent locale={lang as Locale} />
 
       <SimpleAboutSection />
 
-      <TrustedBy />
+      <TrustedBy locale={lang as Locale} />
 
      
 
