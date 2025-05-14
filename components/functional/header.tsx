@@ -22,9 +22,9 @@ import Image from "next/image";
 
 const localeNames = {
   en: "English",
-  me: "Crnogorski",
-  sq: "Albanski",
-  ru: "Ruski",
+  me: "Crnogorski", 
+  sq: "Shqip",
+  ru: "Русский",
 };
 const navItems  = {
     en:[
@@ -57,7 +57,7 @@ export default function Header({ locale }: { locale: Locale }) {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full md:shadow-sm bg-background">
+    <header className="sticky top-0 z-50 border-b  w-full md:shadow-sm bg-background">
       <div className="container px-4 md:px-0 flex h-fit py-2 items-center justify-center mx-auto">
         <div className="flex w-full justify-between items-center gap-6">
           <Link href={`/${locale}`} className="font-bold text-xl">
@@ -91,8 +91,11 @@ export default function Header({ locale }: { locale: Locale }) {
         {/* Language Switcher and Mobile Menu */}
         <div className="flex items-center gap-4 ml-1">
           <DropdownMenu >
-            <DropdownMenuTrigger className="cursor-pointer p-2 rounded-md hidden md:block hover:bg-accent">
-              <GlobeIcon className="h-5 w-5" />
+            <DropdownMenuTrigger className="cursor-pointer  gap-2 flex-row text-xs p-2 rounded-md hidden md:flex hover:bg-accent">
+              <GlobeIcon className="h-4 w-4" /> 
+              <span className="text-xs">
+                {localeNames[locale]}
+              </span>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
               {Object.entries(localeNames).map(([code, name]) => (

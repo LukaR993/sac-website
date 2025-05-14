@@ -137,7 +137,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             ))}
           </div>
         </div>
-        <div className=" mt-4 flex justify-end gap-2">
+        <div className="hidden md:flex mt-4 justify-end gap-2">
           <button
             className="relative z-40 flex h-10 w-10 items-center justify-center  bg-[#7D1C21] disabled:opacity-50"
             onClick={scrollLeft}
@@ -181,7 +181,7 @@ export const Card = ({
       <motion.button
         layoutId={layout ? `card-${card.category}` : undefined}
         onClick={handleClick}
-        className="group relative z-10 cursor-pointer hover:grayscale-50 transition-all duration-300 flex h-80 w-56 flex-col items-start justify-start overflow-hidden  bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900"
+        className="group relative z-10 cursor-pointer hover:grayscale-50 transition-all duration-300 flex h-80 w-[91vw] flex-col items-start justify-start overflow-hidden  bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900"
       >
        
         <Image

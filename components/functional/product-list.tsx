@@ -22,7 +22,7 @@ export default function ProductList(params: { locale: Locale; categoryId?: strin
     refetch();
   }, [searchParams.get("category")]);
   return (
-    <div id="product-list" className="grid grid-cols-1 px-4 md:px-0 mt-12   md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div id="product-list" className="grid grid-cols-2 px-4 md:px-0 mt-12    md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8">
      
       {data?.data.map((product, index) => (
         <ProductCard
