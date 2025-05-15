@@ -43,7 +43,7 @@ export default  function ProductCard({ name, description, image, locale, product
             .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
             .replace(/^[-*+]\s+/gm, '')
             .replace(/^\d+\.\s+/gm, '')
-            .trim().toLowerCase()}</p>
+            .trim()}</p>
        
       
       </div>

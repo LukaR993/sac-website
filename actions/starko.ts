@@ -143,7 +143,7 @@ export const getArticles = async (params: GetArticlesParams, apiKey?: string): P
     if (params?.id) queryParams.set('id', params.id);
     if (params?.title) queryParams.set('title', params.title);
     if (params?.category) queryParams.set('category', params.category);
-
+    queryParams.set('page_size', '200');
     const res = await fetch(`${process.env.API_ENDPOINT}/articles?${queryParams.toString()}`, {
         method: "GET",
         headers: {
