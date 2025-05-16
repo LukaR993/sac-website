@@ -102,6 +102,7 @@ export const getCategories = async (apiKey?: string): Promise<{
         description: string;
         created_at: string;
         updated_at: string | null;
+        thumbnail_url: string | null;
     }>;
 }> => {
     const res = await fetch(`${process.env.API_ENDPOINT}/categories`, {

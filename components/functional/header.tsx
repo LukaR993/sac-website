@@ -21,10 +21,10 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 const localeNames = {
-  en: "English",
-  me: "Crnogorski", 
-  sq: "Shqip",
-  ru: "Русский",
+  en: "🇬🇧 English",
+  me: "🇲🇪 Crnogorski", 
+  sq: "🇦🇱 Shqip",
+  ru: "🇷🇺 Русский",
 };
 const navItems  = {
     en:[
@@ -92,8 +92,8 @@ export default function Header({ locale }: { locale: Locale }) {
         <div className="flex items-center gap-4 ml-1">
           <DropdownMenu >
             <DropdownMenuTrigger className="cursor-pointer  gap-2 flex-row text-xs p-2 rounded-md hidden md:flex hover:bg-accent">
-              <GlobeIcon className="h-4 w-4" /> 
-              <span className="text-xs">
+            
+              <span className="text-xs whitespace-nowrap">
                 {localeNames[locale]}
               </span>
             </DropdownMenuTrigger>

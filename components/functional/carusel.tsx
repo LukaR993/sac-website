@@ -20,7 +20,7 @@ export function CarouselComponent(params: {locale: Locale}) {
         description: card.description,
         link: `/${params.locale}/products?category=${card.id}`,
 
-        src: '/img/arome.png',
+        src: card.thumbnail_url || '',
       }}
       index={index}
     />
