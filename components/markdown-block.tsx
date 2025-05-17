@@ -240,7 +240,7 @@ const defaultComponents = memoizeMarkdownComponents({
             className
           )}
         >
-          <Image src="/img/icon3.png" alt="icon3" width={36} className="mx-auto"  height={36}  />
+          <Image src="/img/icon3.png" alt="icon5" width={36} className="mx-auto"  height={36}  />
         </td>
       );
     }
