@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 
 import ReactMarkdown from "react-markdown";
-import { CopyIcon } from "lucide-react";
+import { CopyIcon, DownloadIcon, Package } from "lucide-react";
 import { Element } from "hast";
 import { ComponentProps, ComponentType, ElementType, FC, memo } from "react";
 import SyntaxHighlighter, { SyntaxHighlighterProps } from "react-syntax-highlighter";
@@ -10,6 +10,7 @@ import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import remarkGfm from "remark-gfm";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
+import Image from "next/image";
 const generateId = (text: string) => {
   return text
     .toLowerCase()
@@ -175,10 +176,23 @@ const defaultComponents = memoizeMarkdownComponents({
   },
   h5: ({ className, ...props }) => <h5 className={cn("my-4 text-lg font-semibold first:mt-0 last:mb-0", className)} {...props} />,
   h6: ({ className, ...props }) => <h6 className={cn("my-4 font-semibold first:mt-0 last:mb-0", className)} {...props} />,
-  p: ({ className, ...props }) => <p className={cn("mb-5 mt-5 leading-7  text-sm first:mt-0 last:mb-0", className)} {...props} />,
-  a: ({ className, ...props }) => (
-    <a className={cn("text-primary font-medium text-sm underline underline-offset-4", className)} {...props} />
-  ),
+  p: ({ className, ...props }) => <p className={cn("mb-5 mt-5 leading-7 w-full  text-sm first:mt-0 last:mb-0", className)} {...props} />,
+  a: ({ className, ...props }) => {
+    if (props.href?.includes("pdf") || props.children?.toString().toLowerCase().includes("pdf")) {
+      return (
+        <a
+          className={cn(
+            " w-full px-2 py-2 rounded-md  bg-[#7D1C21] text-white flex items-center justify-center gap-2 cursor-pointer",
+            className
+          )}
+        >
+          <DownloadIcon className="h-4 w-4" />
+          {props.children}
+        </a>
+      );
+    }
+    return <a className={cn("text-primary font-medium text-sm underline underline-offset-4", className)} {...props} />;
+  },
   blockquote: ({ className, ...props }) => <blockquote className={cn("border-l-2 text-sm pl-6 italic", className)} {...props} />,
   ul: ({ className, ...props }) => <ul className={cn("my-5 ml-6 list-disc [&>li]:mt-2 text-sm", className)} {...props} />,
   ol: ({ className, ...props }) => (
@@ -190,27 +204,68 @@ const defaultComponents = memoizeMarkdownComponents({
       <table className={cn("w-full border-collapse border-spacing-0", className)} {...props} />
     </div>
   ),
-  thead: ({ className, ...props }) => <thead className={cn("bg-muted", className)} {...props} />,
+  thead: ({ className, ...props }) => <thead className={cn("bg-[#7D1C21] text-white", className)} {...props} />,
   tbody: ({ className, ...props }) => <tbody className={cn("", className)} {...props} />,
   img: ({ className, ...props }) => <img className={cn("w-full rounded-md shadow-sm", className)} {...props} />,
-  th: ({ className, ...props }) => (
-    <th
-      className={cn(
-        "border border-muted-foreground px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right",
-        className
-      )}
-      {...props}
-    />
-  ),
-  td: ({ className, ...props }) => (
-    <td
-      className={cn(
-        "border border-muted-foreground px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
-        className
-      )}
-      {...props}
-    />
-  ),
+  th: ({ className, ...props }) => {
+    
+    return (
+      <th
+        className={cn(
+          "border border-[#7D1C21] px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right",
+          className
+        )}
+        {...props}
+      />
+    );
+  },
+  td: ({ className, ...props }) => {
+    if (props.children?.toString().toLowerCase().includes("#pakovanje")) {
+      return (
+        <td
+          className={cn(
+            "border bg-[#7D1C21] border-[#7D1C21] text-white px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
+            className
+          )}
+        >
+          <Image src="/img/icon2.png" alt="icon2" width={36} className="mx-auto"  height={20} />
+        </td>
+      );
+    }
+    if (props.children?.toString().toLowerCase().includes("#procenat")) {
+      return (
+        <td
+          className={cn(
+            "border bg-[#7D1C21] border-[#7D1C21] text-white px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
+            className
+          )}
+        >
+          <Image src="/img/icon3.png" alt="icon3" width={36} className="mx-auto"  height={36}  />
+        </td>
+      );
+    }
+    if (props.children?.toString().toLowerCase().includes("#rok")) {
+      return (
+        <td
+          className={cn(
+            "border bg-[#7D1C21] border-[#7D1C21] text-white px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
+            className
+          )}
+        >
+          <Image src="/img/icon1.png" alt="icon4" width={36} className="mx-auto"  height={20} />
+        </td>
+      );
+    }
+    return (
+      <td
+        className={cn(
+          "border border-muted-foreground px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
+          className
+        )}
+        {...props}
+      />
+    );
+  },
   tr: ({ className, ...props }) => <tr className={cn("m-0 border-t p-0", className)} {...props} />,
   sup: ({ className, ...props }) => <sup className={cn("[&>a]:text-xs [&>a]:no-underline", className)} {...props} />,
   code: function Code({ inline, className, children, ...props }: CodeProps) {

@@ -18,7 +18,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
 
       <CarouselComponent locale={lang as Locale} />
 
-      <SimpleAboutSection />
+      <SimpleAboutSection locale={lang as Locale} />
 
       <TrustedBy locale={lang as Locale} />
 
