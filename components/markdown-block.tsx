@@ -185,6 +185,8 @@ const defaultComponents = memoizeMarkdownComponents({
             " w-full px-2 py-2 rounded-md  bg-[#7D1C21] text-white flex items-center justify-center gap-2 cursor-pointer",
             className
           )}
+          href={props.href}
+          target="_blank"
         >
           <DownloadIcon className="h-4 w-4" />
           {props.children}
