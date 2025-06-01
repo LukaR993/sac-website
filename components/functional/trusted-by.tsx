@@ -15,23 +15,54 @@ const logos = [
   {
     name: "Logo 2",
     svg: (
-        <Image src="/logos/logo2.svg" alt="Logo 2" width={100} height={25} />
+      <Image src="/logos/logo2.png" alt="Logo 2" width={190} height={72} />
     ),
-    url: "/partners/BMM",
+    url: "/partners/ireks",
   },
   {
     name: "Logo 3",
+    svg: (
+      <Image src="/logos/logo3.png" alt="Pobeda" width={190} height={72} />
+    ),
+    url: "/partners/pobeda",
+  },
+  {
+    name: "Logo 4",
     svg: (
       <Image src="/logos/logo3.svg" alt="Logo 3" width={200} height={64} />
     ),
     url: "/partners/karntner",
   },
   {
+    name: "Logo 5",
+    svg: (
+      <Image src="/logos/logo5.png" alt="Logo 5" width={190} height={72} />
+    ),
+    url: "/partners/karntner",
+  },
+  {
+    name: "Logo 6",
+    svg: (
+      <Image src="/logos/logo6.png" alt="Logo 6" width={190} height={72} />
+    ),
+    url: "/partners/ireks",
+  },
+ 
+  
+
+  {
     name: "Logo 4",
     svg: (
       <Image src="/logos/logo4.svg" alt="Logo 4" width={200} height={31} />
     ),
     url: "/partners/karntner",
+  },
+  {
+    name: "Logo 8",
+    svg: (
+        <Image src="/logos/logo2.svg" alt="Logo 2" width={100} height={25} />
+    ),
+    url: "/partners/BMM",
   },
 ];
 

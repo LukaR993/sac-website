@@ -234,7 +234,7 @@ const defaultComponents = memoizeMarkdownComponents({
         </td>
       );
     }
-    if (props.children?.toString().toLowerCase().includes("#procenat")) {
+    if (props.children?.toString().toLowerCase().includes("#rok")) {
       return (
         <td
           className={cn(
@@ -246,7 +246,7 @@ const defaultComponents = memoizeMarkdownComponents({
         </td>
       );
     }
-    if (props.children?.toString().toLowerCase().includes("#rok")) {
+    if (props.children?.toString().toLowerCase().includes("#procenat")) {
       return (
         <td
           className={cn(
