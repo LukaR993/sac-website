@@ -29,6 +29,28 @@ export function CarouselComponent(params: {locale: Locale}) {
   return (
     <div className="container px-4 md:px-0">
       <Carousel items={cards || []} />
+      {data.data?.data?.slice(0, 1).map((category) => (
+        <div key={category.id} className="mt-8">
+         
+          <div className="flex flex-row max-w-full overflow-x-auto gap-4 ">
+            {[
+              {id: 1, name: "Pekarski proizvodi", description: "Kvalitetne sirovine za pekarsku industriju"},
+              {id: 2, name: "Slastičarski proizvodi", description: "Premium dodaci za poslastičarstvo"},
+              {id: 3, name: "Mesni proizvodi", description: "Začini i aditivi za mesnu industriju"},
+              {id: 4, name: "HoReCa program", description: "Profesionalni proizvodi za hotele i restorane"}
+            ].map((subcategory, index) => (
+              <a 
+                key={subcategory.id}
+                href={`/${params.locale}/products?category=${category.id}&subcategory=${subcategory.id}`}
+                className={`p-4 border rounded-lg hover:shadow-md transition-shadow hover:bg-[#7D1C21]/20  ${index === 0 ? 'bg-[#7D1C21] text-white' : ''}`}
+              >
+                <h4 className="font-medium">{subcategory.name}</h4>
+                <p className={`text-sm mt-1 line-clamp-2 ${index === 0 ? 'text-white/90' : 'text-gray-500'}`}>{subcategory.description}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

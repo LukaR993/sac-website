@@ -214,7 +214,7 @@ const defaultComponents = memoizeMarkdownComponents({
     return (
       <th
         className={cn(
-          "border border-[#7D1C21] px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right",
+          "border border-[#7D1C21] px-2 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right",
           className
         )}
         {...props}
@@ -226,7 +226,7 @@ const defaultComponents = memoizeMarkdownComponents({
       return (
         <td
           className={cn(
-            "border bg-[#7D1C21] border-[#7D1C21] text-white px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
+            "border bg-[#7D1C21] border-[#7D1C21] text-white px-1 py-1 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
             className
           )}
         >
@@ -238,7 +238,7 @@ const defaultComponents = memoizeMarkdownComponents({
       return (
         <td
           className={cn(
-            "border bg-[#7D1C21] border-[#7D1C21] text-white px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
+            "border bg-[#7D1C21] border-[#7D1C21] text-white px-1 py-1 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
             className
           )}
         >
@@ -250,11 +250,11 @@ const defaultComponents = memoizeMarkdownComponents({
       return (
         <td
           className={cn(
-            "border bg-[#7D1C21] border-[#7D1C21] text-white px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
+            "border bg-[#7D1C21] border-[#7D1C21] text-white px-1 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
             className
           )}
         >
-          <Image src="/img/icon1.png" alt="icon4" width={36} className="mx-auto"  height={20} />
+          <Image src="/img/icon1.png" alt="icon4" width={34} className="mx-auto"  height={34} />
         </td>
       );
     }

@@ -15,10 +15,8 @@ export default function ProductList(params: { locale: Locale; categoryId?: strin
   });
 
   useEffect(() => {
-    const productList = document.getElementById("product-list");
-    if (productList) {
-      productList.scrollIntoView({ behavior: "smooth" });
-    }
+   
+    
     refetch();
   }, [searchParams.get("category")]);
   return (

@@ -8,7 +8,7 @@ const logos = [
   {
     name: "Logo 1",
     svg: (
-      <Image src="/logos/logo.svg" alt="Logo 1" width={100} height={31} />
+      <Image src="/logos/ireks.png" alt="Logo 1" width={100} height={31} />
     ),
     url: "/partners/ireks",
   },
@@ -17,7 +17,7 @@ const logos = [
     svg: (
       <Image src="/logos/logo2.png" alt="Logo 2" width={190} height={72} />
     ),
-    url: "/partners/ireks",
+    url: "/partners/dreidoppel",
   },
   {
     name: "Logo 3",
@@ -38,14 +38,14 @@ const logos = [
     svg: (
       <Image src="/logos/logo5.png" alt="Logo 5" width={190} height={72} />
     ),
-    url: "/partners/karntner",
+    url: "/partners/glazir",
   },
   {
     name: "Logo 6",
     svg: (
       <Image src="/logos/logo6.png" alt="Logo 6" width={190} height={72} />
     ),
-    url: "/partners/ireks",
+    url: "/partners/takasago",
   },
  
   
@@ -53,9 +53,9 @@ const logos = [
   {
     name: "Logo 4",
     svg: (
-      <Image src="/logos/logo4.svg" alt="Logo 4" width={200} height={31} />
+      <Image src="/logos/unigra.png" alt="Logo 4" width={200} height={31} />
     ),
-    url: "/partners/karntner",
+    url: "/partners/unigra",
   },
   {
     name: "Logo 8",
@@ -77,7 +77,7 @@ const TrustedBy: React.FC<{ locale: Locale }> = ({ locale }) => {
           <Link
             key={index}
             className="group w-full h-28 flex items-center justify-center relative p-4 before:absolute before:-left-1 before:top-0 before:z-10 before:h-screen before:w-px before:bg-border before:content-[''] after:absolute after:-top-1 after:left-0 after:z-10 after:h-px after:w-screen after:bg-border after:content-['']"
-            href={logo.url}
+            href={"/"+locale+"/"+logo.url}
           >
             <div className="transition-all grayscale duration-200 [cubic-bezier(0.165, 0.84, 0.44, 1)] translate-y-0 group-hover:scale-95 group-hover:blur-md duration-300 flex items-center justify-center w-full h-full">
               {logo.svg}

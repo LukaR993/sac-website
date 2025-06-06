@@ -13,7 +13,7 @@ export default async function After20Years({locale}:{locale:Locale}) {
     <section className="w-full py-8 md:py-16">
       <div className="container px-4 md:pl-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12">
-          <h2 className="text-2xl md:text-4xl font-bold text-[#310b0d] md:col-span-3">
+          <h2 className="text-2xl md:text-4xl font-bold text-[#310b0d] text-center md:col-span-3">
             {dict.after20.title}
           </h2>
           <div className='flex md:col-span-9 flex-col items-end gap-2'>

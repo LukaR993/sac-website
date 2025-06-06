@@ -15,8 +15,8 @@ const translations = {
   },
   me: {
     title: "Mi nismo samo distributer.",
-    paragraph1: "Sač je danas prepoznata kao jedan od vodećih distributera visokokvalitetnih sirovina i dodataka za pekarsku, poslastičarsku, mesno-prerađivačku industriju, ali i za proizvodnju piva, dodataka za vino i tržište stočne hrane.",
-    paragraph2: "Naš slogan 'Sve najbolje iz prirode' – nisu samo ispražene riječi, već princip kojim se vodimo u svakom segmentu poslovanja.",
+    paragraph1: "Sač je danas prepoznat kao jedan od vodećih distributera visokokvalitetnih sirovina i dodataka za pekarsku, poslastičarsku, mesno-prerađivačku industriju, ali i za proizvodnju piva, dodataka za vino i tržište stočne hrane.",
+    paragraph2: "Naš slogan 'Sve najbolje iz prirode' – nisu samo isprazne riječi, već princip kojim se vodimo u svakom segmentu poslovanja.",
     buttonText: "O nama"
   },
   sq: {
@@ -43,7 +43,7 @@ export default function SimpleAboutSection({locale}: {locale: Locale}) {
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="relative w-full h-64 md:h-80 overflow-hidden shadow-lg">
             <Image
-              src="https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=800&auto=format&fit=crop"
+              src="/img/cover3.png"
               alt="Warehouse forklift"
               fill
               className="object-cover"

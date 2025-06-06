@@ -5,6 +5,7 @@ import Header from "@/components/functional/header";
 import { Locale } from "@/types";
 import Footer from "@/components/functional/footer";
 import Providers from "@/utils/providers";
+import AutoScrollToTop from "@/components/functional/auto-scroll-fix";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default async function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} bg-white antialiased `}>
         <Providers>
           <>
+            <AutoScrollToTop />
             <Header locale={lang as Locale} />
             {children}
             <Footer locale={lang as Locale} />

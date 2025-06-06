@@ -182,9 +182,7 @@ export default function SingleBlogRender({ slug, locale }: { slug: string; local
               })}
             </time>
           </div>
-          <div className="min-w-[300px] hidden md:block">
-            <MemoizedMarkdown content={extractedMarkdownTable || ""} id={blog?.data.id || ""} />
-          </div>
+          
         </div>
 
         <div className="md:hidden">
@@ -198,7 +196,11 @@ export default function SingleBlogRender({ slug, locale }: { slug: string; local
         </div>
       </article>
       <div className="hidden md:block col-span-2 w-full h-fit sticky top-37">
-        <TableOfContents content={blog?.data.content || ""} />
+        <TableOfContents content={blog?.data.content || ""} >
+        <div className="min-w-[243px] max-w-[243px] hidden md:block">
+            <MemoizedMarkdown content={extractedMarkdownTable || ""} id={blog?.data.id || ""} />
+          </div>
+          </TableOfContents>
       </div>
     </div>
   );

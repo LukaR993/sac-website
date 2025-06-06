@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Locale } from "@/types";
@@ -55,19 +55,22 @@ const navItems  = {
 
 export default function Header({ locale }: { locale: Locale }) {
   const pathname = usePathname();
-
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
   return (
     <header className="sticky top-0 z-50 border-b  w-full md:shadow-sm bg-background">
       <div className="container px-4 md:px-0 flex h-fit py-2 items-center justify-center mx-auto">
         <div className="flex w-full justify-between items-center gap-6">
-          <Link href={`/${locale}`} className="font-bold text-xl">
-            <Image src="/img/logo.svg" alt="logo" width={36} height={36} />
+          <Link href={`/${locale}`} className="font-bold w-[86px] h-[68px] text-xl relative">
+            <Image src="/img/logo.svg" alt="logo" fill className="object-contain" />
           </Link>
 
           {/* Desktop Navigation */}
           <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
-              {navItems[locale].map((item) => (
+              {navItems[locale]?.map((item) => (
                 <NavigationMenuItem key={item.href}>
                   <Link href={`/${locale}${item.href}`} passHref>
                     <NavigationMenuLink
@@ -90,7 +93,7 @@ export default function Header({ locale }: { locale: Locale }) {
 
         {/* Language Switcher and Mobile Menu */}
         <div className="flex items-center gap-4 ml-1">
-          <DropdownMenu >
+          {/* <DropdownMenu >
             <DropdownMenuTrigger className="cursor-pointer  gap-2 flex-row text-xs p-2 rounded-md hidden md:flex hover:bg-accent">
             
               <span className="text-xs whitespace-nowrap">
@@ -112,10 +115,10 @@ export default function Header({ locale }: { locale: Locale }) {
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
-          </DropdownMenu>
+          </DropdownMenu> */}
 
           {/* Mobile Menu */}
-          <Sheet>
+          <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild className="md:hidden">
               <Button 
                 variant="ghost" 
@@ -155,7 +158,7 @@ export default function Header({ locale }: { locale: Locale }) {
                     </Link>
                   ))}
                 </nav>
-                <div className="mt-auto pt-0 border-t">
+                {/* <div className="mt-auto pt-0 border-t">
                   <div className="flex flex-col gap-0">
                     {Object.entries(localeNames).map(([code, name]) => (
                       <Link
@@ -172,7 +175,7 @@ export default function Header({ locale }: { locale: Locale }) {
                       </Link>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
             </SheetContent>
           </Sheet>

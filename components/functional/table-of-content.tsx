@@ -15,9 +15,10 @@ interface Heading {
 
 interface TableOfContentsProps {
   content: string
+  children?: React.ReactNode
 }
 
-export function TableOfContents({ content }: TableOfContentsProps) {
+export function TableOfContents({ content, children }: TableOfContentsProps) {
   const [headings, setHeadings] = useState<Heading[]>([])
   const [activeId, setActiveId] = useState<string>('')
   const [isCollapsed, setIsCollapsed] = useState(false)
@@ -87,7 +88,7 @@ export function TableOfContents({ content }: TableOfContentsProps) {
   const shouldBeScrollable = headings.length > 4
 
   return (
-    <div className="border bg-card rounded-md ">
+    <div className=" bg-card rounded-md ">
       <div className="flex items-center bg-[#7D1C21] text-white justify-between mb-4">
        
         {shouldBeScrollable && (
@@ -140,6 +141,7 @@ export function TableOfContents({ content }: TableOfContentsProps) {
           </motion.div>
         )}
       </AnimatePresence>
+      {children}
     </div>
   )
 } 

@@ -8,6 +8,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import TrustedBy from "@/components/functional/trusted-by";
 import FounderWords from "@/components/functional/founder-words";
+import { MemoizedMarkdown } from "@/components/markdown-block";
 
 export default async function AboutUs({ locale }: { locale: Locale }) {
   const dict = await getDictionary(locale);
@@ -16,8 +17,9 @@ export default async function AboutUs({ locale }: { locale: Locale }) {
     <main className="min-h-screen">
 
       
-
-      {/* Mission Section */}
+      {/* CTA Section */}
+     
+     
       <section className=" py-8 md:py-16 bg-gradient-to-b from-white ">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center animate-fade-in">
@@ -32,8 +34,7 @@ export default async function AboutUs({ locale }: { locale: Locale }) {
             </div>
             <div className="space-y-8">
               <div className="space-y-4">
-                <h2 className="text-4xl md:text-5xl font-bold text-[#7D1C21] leading-tight">{dict.about.mission.title}</h2>
-                <p className="text-xl text-gray-700 leading-relaxed">{dict.about.mission.description}</p>
+                <h2 className="text-4xl text-center md:text-left md:text-5xl font-bold text-[#7D1C21] leading-tight">{dict.about.mission.title}</h2>
               </div>
               <div className="grid grid-cols-2 gap-8">
                 <div className="space-y-3 p-4 bg-[#7d1c21]  border  transition-all ">
@@ -58,7 +59,12 @@ export default async function AboutUs({ locale }: { locale: Locale }) {
                 </div>
               </div>
             </div>
+
           </div>
+          <p className="  text-gray-700 mt-12 md:gap-8">
+            <MemoizedMarkdown content={dict.about.cta.description} id="cta -1" />
+          </p>
+
         </div>
       </section>
       <TrustedBy locale={locale} />
@@ -91,26 +97,9 @@ export default async function AboutUs({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-[#7D1C21] to-[#9B2C32] text-white">
-        <div className="container mx-auto px-4">
-          <div className=" text-balance mx-auto text-center animate-fade-in">
-            <h2 className="text-2xl md:text-4xl font-bold mb-6">{dict.about.cta.title}</h2>
-            <p className="text-base mb-12  mx-auto leading-relaxed">{dict.about.cta.description}</p>
-            <Link
-              href={`/${locale}/contacts`}
-              className={cn(
-                buttonVariants({ size: "lg" }),
-                "bg-white text-[#7D1C21] hover:bg-gray-100 text-base     "
-              )}
-            >
-              {dict.about.cta.button} <ArrowRightIcon className="w-5 h-5 ml-2" />
-            </Link>
-          </div>
-        </div>
-      </section>
 
-      <FounderWords locale={locale} />
+
+      {/* <FounderWords locale={locale} /> */}
     </main>
   );
 }

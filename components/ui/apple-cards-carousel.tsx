@@ -95,7 +95,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     <CarouselContext.Provider
       value={{ onCardClose: handleCardClose, currentIndex }}
     >
-      <div className="relative w-full">
+      <div className="relative w-full flex flex-col items-center justify-center">
         <div
           className="flex w-full p-0 overflow-x-scroll overscroll-x-auto scroll-smooth  [scrollbar-width:none] "
           ref={carouselRef}
@@ -137,16 +137,16 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             ))}
           </div>
         </div>
-        <div className="hidden md:flex mt-4 justify-end gap-2">
+        <div className="absolute  w-full  justify-between flex mt-4  gap-2">
           <button
-            className="relative z-40 flex h-10 w-10 items-center justify-center  bg-[#7D1C21] disabled:opacity-50"
+            className="relative z-[50] cursor-pointer flex h-10 w-10 items-center justify-center  bg-[#7D1C21] disabled:opacity-50 "
             onClick={scrollLeft}
             disabled={!canScrollLeft}
           >
             <IconArrowNarrowLeft className="h-6 w-6 text-white" />
           </button>
           <button
-            className="relative z-40 flex h-10 w-10 items-center justify-center  bg-[#7D1C21] disabled:opacity-50"
+            className="relative z-[50] cursor-pointer flex h-10 w-10 items-center justify-center  bg-[#7D1C21] disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}
           >
@@ -181,7 +181,7 @@ export const Card = ({
       <motion.button
         layoutId={layout ? `card-${card.category}` : undefined}
         onClick={handleClick}
-        className="group relative z-10 cursor-pointer hover:grayscale-50 transition-all duration-300 flex h-80 w-[91vw] flex-col items-start justify-start overflow-hidden  bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900"
+        className="group relative z-10 cursor-pointer hover:grayscale-50 transition-all duration-300 flex h-80 w-[30vw] hover:w-[50vw] overflow-hidden group flex-col items-start justify-start overflow-hidden  bg-gray-100 md:h-[30rem] md:w-96 dark:bg-neutral-900"
       >
        
         <Image
@@ -195,14 +195,14 @@ export const Card = ({
        
           <motion.p
             layoutId={layout ? `title-${card.category}` : undefined}
-            className="mt-2 max-w-xs text-left font-sans text-xl font-semibold [text-wrap:balance] text-white md:text-3xl"
+            className="mt-2 max-w-xs text-left font-sans text-xl  font-semibold [text-wrap:balance] text-white md:text-3xl"
           >
             {card.category}
           </motion.p>
           {card.description && (
             <motion.p
               layoutId={layout ? `description-${card.description}` : undefined}
-              className="mt-2 max-w-xs text-left font-sans text-sm font-medium text-white opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 md:text-base"
+              className="mt-2 text-xs text-left font-sans font-medium text-white  opacity-0 transition-opacity  min-w-[48vw]  duration-300 delay-100  group-hover:translate-y-0 group-hover:opacity-100 md:text-base"
             >
               {card.description}
             </motion.p>
