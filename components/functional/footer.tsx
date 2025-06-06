@@ -12,8 +12,8 @@ export default async function Footer({ locale }: { locale: Locale }) {
           {/* Address */}
           <div className="space-y-2">
             <h3 className="text-lg font-semibold mb-4">{dictionary.footer?.addressTitle || "Address"}</h3>
-            <p className="text-white/90 text-sm">4 Jul 62</p>
-            <p className="text-white/90 text-sm">81000 Podgorica</p>
+            <p className="text-white/90 text-sm">Novo selo bb</p>
+            <p className="text-white/90 text-sm">81410 Danilovgrad</p>
             <p className="text-white/90 text-sm">Crna Gora</p>
           </div>
 
