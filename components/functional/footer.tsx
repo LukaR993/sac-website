@@ -20,7 +20,7 @@ export default async function Footer({ locale }: { locale: Locale }) {
           {/* Contact */}
           <div className="space-y-2">
             <h3 className="text-lg font-semibold mb-4">{dictionary.footer?.contactTitle || "Contact"}</h3>
-            <p className="text-white/90 text-sm">Tel/Fax: +382 20 223 693</p>
+           
             <p className="text-white/90 text-sm">Mob: +382 69 010 766</p>
           </div>
 

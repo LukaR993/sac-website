@@ -17,15 +17,15 @@ export default async function Contacts({ locale }: { locale: Locale }) {
             <div className="bg-white p-6 rounded-lg border text-center">
               <MapPin className="w-12 h-12 text-[#7D1C21] mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">{dict.contacts.address.title}</h3>
-              <p className="text-gray-600">4 Jul 62</p>
-              <p className="text-gray-600">81000 Podgorica</p>
+              <p className="text-gray-600">Novo selo bb</p>
+              <p className="text-gray-600">81410 Danilovgrad</p>
               <p className="text-gray-600">Crna Gora</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg border text-center">
               <Phone className="w-12 h-12 text-[#7D1C21] mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">{dict.contacts.phone.title}</h3>
-              <p className="text-gray-600">Tel/Fax: +382 20 223 693</p>
+             
               <p className="text-gray-600">Mob: +382 69 010 766</p>
             </div>
             
