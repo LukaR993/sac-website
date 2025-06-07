@@ -99,12 +99,12 @@ export function CarouselComponent(params: {locale: Locale}) {
     setSelectedSubCategory(searchParams.get("subcategory") || null);
   }, [searchParams]);
   useEffect(() => {
-    if (!pathname.includes("products") || !pathname.includes("proizvodi") || !pathname.includes("produkte") || searchParams.get("category") || searchParams.get("subcategory")) {
+    if (pathname.length<4) {
       setShowAll(true);
     } else {
       setShowAll(false);
     }
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   const sortedCards = data.data?.data?.sort((a, b) => {
     const orderA = categoryOrder[a.name] || 999;
@@ -133,6 +133,7 @@ export function CarouselComponent(params: {locale: Locale}) {
 
   return (
     <div className="container px-4 md:px-0">
+    
       <Carousel items={cards || []} />
       {showAll && <div className="w-full flex items-end justify-end">
         <Link href={`/${params.locale}/products`} className={cn(buttonVariants({variant:'default'}), 'mt-4')}>
