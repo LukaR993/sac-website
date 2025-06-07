@@ -95,12 +95,12 @@ export function CarouselComponent(params: {locale: Locale}) {
       </div>}
       <div className="mt-8 flex flex-row gap-4 overflow-x-auto scrollbar-hide">
       {(singleCategoryInfo.data?.data as Category)?.sub_categories?.map((subcategory: SubCategory, index: number) => (
-        <div key={subcategory.id} className="mt-8">
+        <div key={subcategory.id} className="md:mt-8">
           <div className="flex flex-row max-w-full overflow-x-auto gap-4 ">
             <Link 
               key={subcategory.id}
               href={`/${params.locale}/products?category=${(singleCategoryInfo.data?.data as Category)?.id}&subcategory=${subcategory.id}`}
-              className={`p-4 border rounded-lg hover:shadow-md transition-shadow hover:bg-[#7D1C21]/20  ${selectedSubCategory === subcategory.id ? 'bg-[#7D1C21] text-white' : ''}`}
+              className={`px-2 py-1 border whitespace-nowrap rounded-lg hover:shadow-md transition-shadow hover:bg-[#7D1C21]/20  ${selectedSubCategory === subcategory.id ? 'bg-[#7D1C21] text-white' : ''}`}
             >
               <h4 className="font-medium">{subcategory.name}</h4>
               <p className={`text-sm mt-1 line-clamp-2 ${selectedSubCategory === subcategory.id ? 'text-white/90' : 'text-gray-500'}`}>{subcategory.description}</p>
