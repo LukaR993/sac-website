@@ -129,13 +129,13 @@ export default function SingleBlogRender({ slug, locale }: { slug: string; local
   console.log(extractedMarkdownTable, "extractedMarkdownTable");
   return (
     <div className="grid grid-cols-1 mx-auto container max-w-7xl md:grid-cols-10 gap-4">
-      <article className=" col-span-8 px-4 max-w-3xl md:px-0 pt-12 md:pt-24 mx-auto bg-white overflow-hidden">
+      <article className=" col-span-8 px-4 max-w-[98vw] md:max-w-3xl md:px-0 pt-12 md:pt-24 mx-auto bg-white overflow-hidden">
         <Link href={`/${locale}/products`} className="text-sm text-gray-500 font-medium flex items-center gap-2 mb-4">
           <ArrowLeft className="w-4 h-4" /> Products
         </Link>
         {allImages.length > 0 && (
           <div className="space-y-4">
-            <Carousel setApi={setApi} className="w-full">
+            <Carousel setApi={setApi} className="w-full max-w-[98vw]">
               <CarouselContent>
                 {allImages.map((imageUrl, index) => (
                   <CarouselItem key={index}>
