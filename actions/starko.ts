@@ -119,10 +119,48 @@ export const getCategories = async (apiKey?: string): Promise<{
     return data;
 }
 
+
+export const getSingleCategory = async (id: string, apiKey?: string): Promise<{
+    ok: boolean;
+    message: string;
+    data: {
+        id: string;
+        name: string;
+        description: string;
+        created_at: string;
+        updated_at: string | null;
+        thumbnail_url: string | null;
+        sub_categories: Array<{
+            id: string;
+            name: string;
+            description: string;
+            created_at: string;
+            updated_at: string | null;
+            thumbnail_url: string | null;
+        }>;
+    };
+}> => {
+    const res = await fetch(`${process.env.API_ENDPOINT}/categories/${id}`, {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+            'x-starko-workspace-id': apiKey || process.env.API_KEY || "",
+        },
+    })
+    const data = await res.json();
+    if (!res.ok) {
+        throw new Error(data.message || "Failed to fetch categories");
+    }
+    return data;
+}
+
+
+
 export type GetArticlesParams = {
     id?: string,
     title?: string,
-    category?: string
+    category?: string,
+    subcategory?: string,
 }
 
 export const getArticles = async (params: GetArticlesParams, apiKey?: string): Promise<{
@@ -144,6 +182,7 @@ export const getArticles = async (params: GetArticlesParams, apiKey?: string): P
     if (params?.id) queryParams.set('id', params.id);
     if (params?.title) queryParams.set('title', params.title);
     if (params?.category) queryParams.set('category', params.category);
+    if (params?.subcategory) queryParams.set('sub_category', params.subcategory);
     queryParams.set('page_size', '200');
     const res = await fetch(`${process.env.API_ENDPOINT}/articles?${queryParams.toString()}`, {
         method: "GET",
