@@ -93,7 +93,7 @@ export default function Header({ locale }: { locale: Locale }) {
 
         {/* Language Switcher and Mobile Menu */}
         <div className="flex items-center gap-4 ml-1">
-          {/* <DropdownMenu >
+          <DropdownMenu >
             <DropdownMenuTrigger className="cursor-pointer  gap-2 flex-row text-xs p-2 rounded-md hidden md:flex hover:bg-accent">
             
               <span className="text-xs whitespace-nowrap">
@@ -115,7 +115,7 @@ export default function Header({ locale }: { locale: Locale }) {
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
-          </DropdownMenu> */}
+          </DropdownMenu>
 
           {/* Mobile Menu */}
           <Sheet open={open} onOpenChange={setOpen}>
@@ -158,7 +158,7 @@ export default function Header({ locale }: { locale: Locale }) {
                     </Link>
                   ))}
                 </nav>
-                {/* <div className="mt-auto pt-0 border-t">
+                <div className="mt-auto pt-0 border-t">
                   <div className="flex flex-col gap-0">
                     {Object.entries(localeNames).map(([code, name]) => (
                       <Link
@@ -175,7 +175,7 @@ export default function Header({ locale }: { locale: Locale }) {
                       </Link>
                     ))}
                   </div>
-                </div> */}
+                </div>
               </div>
             </SheetContent>
           </Sheet>

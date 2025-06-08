@@ -9,21 +9,21 @@ function getLocale(request: NextRequest): string {
   // Get language preferences from Accept-Language header
   const acceptLanguage = request.headers.get('accept-language');
   
-  // if (acceptLanguage) {
-  //   // Try to match browser preferences with our supported locales
-  //   const preferredLocale = acceptLanguage
-  //     .split(',')
-  //     .map(lang => lang.split(';')[0].trim())
-  //     .find(lang => {
-  //       const langCode = lang.substring(0, 2).toLowerCase();
-  //       return locales.some(locale => locale.startsWith(langCode));
-  //     });
+  if (acceptLanguage) {
+    // Try to match browser preferences with our supported locales
+    const preferredLocale = acceptLanguage
+      .split(',')
+      .map(lang => lang.split(';')[0].trim())
+      .find(lang => {
+        const langCode = lang.substring(0, 2).toLowerCase();
+        return locales.some(locale => locale.startsWith(langCode));
+      });
       
-  //   if (preferredLocale) {
-  //     const langCode = preferredLocale.substring(0, 2).toLowerCase();
-  //     return locales.find(locale => locale.startsWith(langCode)) || 'en';
-  //   }
-  // }
+    if (preferredLocale) {
+      const langCode = preferredLocale.substring(0, 2).toLowerCase();
+      return locales.find(locale => locale.startsWith(langCode)) || 'en';
+    }
+  }
   
   // Default to English if no match
   return 'me';
@@ -57,8 +57,8 @@ export function middleware(request: NextRequest) {
     //If the user is on a page variation go to the appropriate page
     const pathParts = pathname.split('/');
     console.log(pathParts, 'PARTS')
-    // const lang = pathParts[1];
-    const lang = 'me'
+    const lang = pathParts[1];
+    // const lang = 'me'
     const page = pathParts[2];
     const singleProduct = pathParts[3];
 
