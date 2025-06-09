@@ -7,8 +7,8 @@ const locales = ['me', 'en', 'sq', 'ru'];
 // Get the preferred locale from request
 function getLocale(request: NextRequest): string {
   // Get language preferences from Accept-Language header
-  const acceptLanguage = request.headers.get('accept-language');
-  
+  const acceptLanguage = 'me'
+
   if (acceptLanguage) {
     // Try to match browser preferences with our supported locales
     const preferredLocale = acceptLanguage
@@ -21,11 +21,11 @@ function getLocale(request: NextRequest): string {
       
     if (preferredLocale) {
       const langCode = preferredLocale.substring(0, 2).toLowerCase();
-      return locales.find(locale => locale.startsWith(langCode)) || 'en';
+      return locales.find(locale => locale.startsWith(langCode)) || 'me';
     }
   }
   
-  // Default to English if no match
+  // Default to Montenegro if no match
   return 'me';
 }
 const pageMaper = (currentPage:string, currentLocale:string)=>{
