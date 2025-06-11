@@ -12,11 +12,10 @@ export default function Widget(params: {locale: Locale}) {
     <Script
       src="https://widget.starko.one/widget.js"
       onLoad={() => {
-        (window as any).initWidget(key);
+        (window as unknown as {
+          initWidget: (key: string) => void;
+        }).initWidget(key);
       }}
     ></Script>
-  
-
-
   )
 }
