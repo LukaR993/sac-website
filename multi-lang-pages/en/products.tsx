@@ -8,6 +8,7 @@ import ProductFilters from "@/components/functional/product-filter";
 import ProductList from "@/components/functional/product-list";
 import StarkoAssistant from "@/components/starko-assistant";
 import { Separator } from "@/components/ui/separator";
+import Searchbar from "@/components/functional/searchbar";
 
 export default async function Products({ locale }: { locale: Locale }) {
   const dict = await getDictionary(locale);
@@ -15,8 +16,8 @@ export default async function Products({ locale }: { locale: Locale }) {
 
   return (
     <main className="min-h-screen py-8 md:py-16">
-      <StarkoAssistant id={key} initialMessage="" locale={locale} />
-    
+     
+    <Searchbar/>
       
       <CarouselComponent locale={locale} />
      

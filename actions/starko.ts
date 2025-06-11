@@ -1,5 +1,6 @@
 'use server'
 
+import { Locale } from "@/types";
 import { z } from "zod";
 
 export const getSingleTicket = async (id: string, apiKey?: string): Promise<{
@@ -241,6 +242,7 @@ export const createTicket = async (ticket: {
     phone: string,
     location: string,
     attachments: string[],
+    locale: Locale
 }, apiKey?: string) => {
     const ticketSchema = z.object({
         title: z.string().optional(),
@@ -252,19 +254,24 @@ export const createTicket = async (ticket: {
         phone: z.string().optional(),
         location: z.string().optional(),
         attachments: z.array(z.string()).optional(),
+        locale: z.string().optional(),
     });
 
     const validatedTicket = ticketSchema.parse(ticket);
+ const key = ticket.locale === "me" ? "c14f2d91-6005-4b3a-ab4c-30d621fde5b9" : ticket.locale === "en" ? "466cb5d3-77d3-480c-ac68-e465257f9517" :  ticket.locale === "ru" ? "fe5633e7-e212-413b-8b79-9b129dcdc6d7" : "35039ed9-5330-40cf-897d-2dee7d19d00b"
 
-    const descriptionToSend = `# Detalji prijave
+    const descriptionToSend = `# Contact Form Details
 
-${validatedTicket.name ? `**Ime:** ${validatedTicket.name}\n` : ""}${validatedTicket.email ? `**Email:** ${validatedTicket.email}\n` : ""}${validatedTicket.phone ? `**Telefon:** ${validatedTicket.phone}\n` : ""}${validatedTicket.location ? `**Lokacija:** ${validatedTicket.location}\n` : ""}
-${validatedTicket.description ? `## Opis problema\n${validatedTicket.description}\n` : ""}`
+## Contact Information
+${validatedTicket.name ? `**Name:** ${validatedTicket.name}\n` : ''}${validatedTicket.email ? `**Email:** ${validatedTicket.email}\n` : ''}${validatedTicket.phone ? `**Phone:** ${validatedTicket.phone}\n` : ''}${validatedTicket.location ? `**Location:** ${validatedTicket.location}\n` : ''}
+
+## Message
+${validatedTicket.description ? validatedTicket.description : ''}`
     const res = await fetch(`${process.env.API_ENDPOINT}/ticket`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            'x-starko-workspace-id': apiKey || process.env.API_KEY || "",
+            'x-starko-workspace-id': key,
         },
         body: JSON.stringify({
             title: validatedTicket.title,

@@ -8,6 +8,7 @@ import Footer from "@/components/functional/footer";
 import Providers from "@/utils/providers";
 import AutoScrollToTop from "@/components/functional/auto-scroll-fix";
 import { getDictionary } from "@/utils/dictionaries";
+import Widget from "@/components/functional/widget";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -64,6 +65,7 @@ export default async function RootLayout({
             <Header locale={lang as Locale} />
             {children}
             <Footer locale={lang as Locale} />
+            <Widget locale={lang as Locale} />
           </>
         </Providers>
         <Analytics />
