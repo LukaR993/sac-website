@@ -363,8 +363,8 @@ export default function Widget(params: {locale: Locale}) {
     }
 
     const initializeWidget = () => {
-      if (typeof window !== 'undefined' && (window as any).initWidget) {
-        (window as any).initWidget(key, currentTranslations)
+      if (typeof window !== 'undefined' && (window as unknown as {initWidget: (key: string, config?: any) => void}).initWidget) {
+        (window as unknown as {initWidget: (key: string, config?: any) => void}).initWidget(key, currentTranslations)
       }
     }
    
