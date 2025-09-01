@@ -1,9 +1,96 @@
 'use client'
 import { Locale } from '@/types'
 import Script from 'next/script'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 
-const translations = {
+interface WidgetConfig {
+  customTexts: {
+    homePage: {
+      greeting: string;
+      chatWithUs: string;
+      reportProblem: string;
+      newMessage: string;
+      logoutAriaLabel: string;
+      searchPlaceholder: string;
+    };
+    reportProblem: {
+      title: string;
+      description: string;
+      titleLabel: string;
+      titlePlaceholder: string;
+      descriptionLabel: string;
+      descriptionPlaceholder: string;
+      attachmentsLabel: string;
+      uploadingText: string;
+      addMoreFiles: string;
+      uploadFilesHint: string;
+      attachedFiles: string;
+      removeFileAriaLabel: string;
+    };
+    verifyEmail: {
+      title: string;
+      description: string;
+      resendCode: string;
+      verifyButton: string;
+    };
+    common: {
+      loading: string;
+      error: string;
+      retry: string;
+    };
+    register: {
+      title: string;
+      emailLabel: string;
+      emailPlaceholder: string;
+      nameLabel: string;
+      namePlaceholder: string;
+      registerButton: string;
+      verificationCodeText: string;
+    };
+    article: {
+      backButton: string;
+      shareButton: string;
+      relatedArticles: string;
+    };
+    tickets: {
+      title: string;
+      noTickets: string;
+      status: string;
+      date: string;
+      viewDetails: string;
+    };
+    success: {
+      title: string;
+      description: string;
+      backToHome: string;
+    };
+    chat: {
+      sendButton: string;
+      inputPlaceholder: string;
+      typingIndicator: string;
+      messageSent: string;
+      messageDelivered: string;
+      messageRead: string;
+      noMessages: string;
+      startChat: string;
+    };
+    ai: {
+      title: string;
+      askQuestion: string;
+      send: string;
+      thinking: string;
+      noAnswer: string;
+    };
+    messageUs: {
+      title: string;
+      message: string;
+      send: string;
+      messagePlaceholder: string;
+    };
+  };
+}
+
+const translations: Record<string, WidgetConfig> = {
   me: {
     customTexts: {
       homePage: {
@@ -352,7 +439,7 @@ const translations = {
 
 export default function Widget(params: {locale: Locale}) {
     const [key, setKey] = useState(params.locale === "me" ? "c14f2d91-6005-4b3a-ab4c-30d621fde5b9" : params.locale === "en" ? "466cb5d3-77d3-480c-ac68-e465257f9517" :  params.locale === "ru" ? "fe5633e7-e212-413b-8b79-9b129dcdc6d7" : "35039ed9-5330-40cf-897d-2dee7d19d00b")
-    const [currentTranslations, setCurrentTranslations] = useState(translations[params.locale as keyof typeof translations] || translations.en)
+    const [currentTranslations, setCurrentTranslations] = useState(translations[params.locale] || translations.en)
     const [scriptLoaded, setScriptLoaded] = useState(false)
     
     const getKeyForLocale = (locale: Locale) => {
@@ -362,15 +449,16 @@ export default function Widget(params: {locale: Locale}) {
              "35039ed9-5330-40cf-897d-2dee7d19d00b"
     }
 
-    const initializeWidget = () => {
-      if (typeof window !== 'undefined' && (window as unknown as {initWidget: (key: string, config?: any) => void}).initWidget) {
-        (window as unknown as {initWidget: (key: string, config?: any) => void}).initWidget(key, currentTranslations)
+    const initializeWidget = useCallback(() => {
+      if (typeof window !== 'undefined' && 'initWidget' in window) {
+        const initWidget = (window as { initWidget: (key: string, config: WidgetConfig) => void }).initWidget
+        initWidget(key, currentTranslations)
       }
-    }
+    }, [key, currentTranslations])
    
     useEffect(() => {
       const newKey = getKeyForLocale(params.locale)
-      const newTranslations = translations[params.locale as keyof typeof translations] || translations.en
+      const newTranslations = translations[params.locale] || translations.en
       
       setKey(newKey)
       setCurrentTranslations(newTranslations)
@@ -379,7 +467,7 @@ export default function Widget(params: {locale: Locale}) {
       if (scriptLoaded) {
         initializeWidget()
       }
-    }, [params.locale, scriptLoaded])
+    }, [params.locale, scriptLoaded, initializeWidget])
 
     const handleScriptLoad = () => {
       setScriptLoaded(true)
