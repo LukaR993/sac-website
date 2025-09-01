@@ -31,7 +31,7 @@ export default async function Footer({ locale }: { locale: Locale }) {
             <Link href="mailto:sach-ireks@t-com.me" className="text-white/90 text-sm hover:text-white block">sach-ireks@t-com.me</Link>
           </div>
 
-          {/* Website */}
+          {/* Website & Social Media */}
           <div className="space-y-2">
             <h3 className="text-lg font-semibold mb-4">{dictionary.footer?.websiteTitle || "Website"}</h3>
             <Link 
@@ -42,6 +42,24 @@ export default async function Footer({ locale }: { locale: Locale }) {
             >
               www.sac-cg.com
             </Link>
+            <div className=" space-y-1">
+              <Link 
+                href="https://www.facebook.com/profile.php?id=61579401836717" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-white/90 text-sm hover:text-white block"
+              >
+                Facebook
+              </Link>
+              <Link 
+                href="https://www.instagram.com/sach_mne/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-white/90 text-sm hover:text-white block"
+              >
+                Instagram
+              </Link>
+            </div>
           </div>
         </div>
 
