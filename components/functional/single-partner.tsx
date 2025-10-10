@@ -136,69 +136,69 @@ const takasago =[
   }
 ]
 
-const unigra = [
+const van = [
   {
     locale:'me',
-    text:'# Unigrà (MasterMartini) – 15 godina našeg partnerstva u industriji margarina i pekarskih sirovina\n\n![Unigrà](/img/unigra1.png)\n\nNaša saradnja sa italijanskom kompanijom Unigrà S.p.A. traje gotovo 15 godina. Bili smo prva kompanija u Crnoj Gori koja je njihove proizvode predstavila domaćem tržištu, uvodeći inovativna rješenja u oblasti poslastičarstva, pekarstva i prehrambene industrije uopšte. Kroz ovaj dugogodišnji odnos, razvili smo stabilnu distributivnu mrežu i omogućili da brojni profesionalci u Crnoj Gori rade sa sirovinama koje zadovoljavaju evropske standarde.\n\n![Unigrà Products](/img/unigra2.png)\n\nUnigrà je osnovana 1972. godine u Conseliceu, Italija, i specijalizovana je za proizvodnju sirovina i poluproizvoda na bazi biljnih masti, margarina, čokolade, punjenja i UHT preliva. Njihovi proizvodi namijenjeni su kako industriji, tako i zanatskom i HoReCa sektoru, što omogućava fleksibilnu upotrebu u različitim vrstama proizvodnje.\n\nKompanija ulaže u održivost i sigurnost proizvoda kroz standardizovane procese i kontrolu kvaliteta. Njihova paleta pokriva osnovne potrebe savremenih pekara i poslastičara, te je funkcionalno rješenje za svakodnevnu proizvodnju.\n\nNaša saradnja se bazira na pouzdanosti, dostupnosti proizvoda i razumijevanju tržišta. Zahvaljujući ranom uvođenju Unigrà brendova u Crnu Goru, mnogi domaći proizvođači su unaprijedili svoje recepte i procese.\n\nZadržavamo otvorenost za dalji razvoj ovog partnerstva, uz kontinuirano praćenje potreba tržišta i kvaliteta koji dolazi od dobavljača.'
+    text:'# Vandemoortele – Ekskluzivni distributer za Crnu Goru\n\n![Vandemoortele](/logos/van.png)\n\nNaša firma je ekskluzivni distributer belgijske kompanije Vandemoortele za crnogorsko tržište, zbog čega domaćim profesionalcima možemo ponuditi proizvode svjetske klase.\n\nVandemoortele je vodeća evropska kompanija sa tradicijom dužom od 120 godina, specijalizovana za proizvodnju margarina, masti i srodnih proizvoda. Njihovi margarini su najprodavaniji u Evropskoj uniji (EU) i s pravom se svrstavaju među najkvalitetnije na svijetu, što ih čini prvim izborom brojnih pekara i poslastičara širom Evrope.\n\nU našem asortimanu posebno ističemo Opal liniju margarina, prepoznatu po izuzetnim performansama u pripremi lisnatih tijesta, kolača, krema i drugih konditorskih proizvoda. Osim Opala, zastupljene su i druge linije koje omogućavaju profesionalcima širok spektar rješenja za svakodnevnu proizvodnju i kreiranje savremenih receptura.\n\nOno što nas povezuje sa Vandemoortele-om jesu vrijednosti kao što su kvalitet, pouzdanost i inovacija. Zahvaljujući ovom partnerstvu, domaće tržište dobija pristup vrhunskim sirovinama koje postavljaju nove standarde u pekarstvu i poslastičarstvu, a profesionalcima otvaraju prostor za unapređenje znanja, tehnika i finalnih proizvoda.'
   },
   {
     locale:'sq',
-    text:'# Unigrà (MasterMartini) – 15 vjet partneritet në industrinë e margarinës dhe lëndëve të para të bukëpjekjes\n\n![Unigrà](/img/unigra1.png)\n\nBashkëpunimi ynë me kompaninë italiane Unigrà S.p.A. ka zgjatur pothuajse 15 vjet. Ne ishim kompania e parë në Mal të Zi që prezantoi produktet e tyre në tregun vendas, duke sjellë zgjidhje inovative në fushën e pastiçerisë, bukëpjekjes dhe industrisë ushqimore në përgjithësi. Përmes kësaj marrëdhënieje afatgjatë, ne kemi zhvilluar një rrjet të qëndrueshëm shpërndarjeje dhe kemi mundësuar që shumë profesionistë në Mal të Zi të punojnë me lëndë të para që plotësojnë standardet evropiane.\n\n![Unigrà Products](/img/unigra2.png)\n\nUnigrà u themelua në vitin 1972 në Conselice, Itali, dhe është e specializuar në prodhimin e lëndëve të para dhe produkteve gjysmë të gatshme bazuar në yndyrna bimore, margarinë, çokollatë, mbushje dhe veshje UHT. Produktet e tyre janë të destinuara si për industrinë, ashtu edhe për sektorin artizanal dhe HoReCa, duke mundësuar përdorim fleksibël në lloje të ndryshme prodhimi.\n\nKompania investon në qëndrueshmërinë dhe sigurinë e produkteve përmes proceseve të standardizuara dhe kontrollit të cilësisë. Gama e tyre mbulon nevojat themelore të furrtarëve dhe pastiçierëve modernë, dhe është një zgjidhje funksionale për prodhimin e përditshëm.\n\nBashkëpunimi ynë bazohet në besueshmëri, disponueshmëri të produkteve dhe kuptim të tregut. Falë prezantimit të hershëm të markave Unigrà në Mal të Zi, shumë prodhues vendas kanë përmirësuar recetat dhe proceset e tyre.\n\nNe mbajmë një qëndrim të hapur për zhvillimin e mëtejshëm të këtij partneriteti, duke monitoruar vazhdimisht nevojat e tregut dhe cilësinë që vjen nga furnizuesit.'
+    text:'# Vandemoortele – Distributori ekskluziv për Malin e Zi\n\n![Vandemoortele](/logos/van.png)\n\nKompania jonë është distributori ekskluziv i kompanisë belge Vandemoortele për tregun malazez, gjë që na mundëson t\'u ofrojmë profesionistëve vendas produkte të klasit botëror.\n\nVandemoortele është një kompani udhëheqëse evropiane me një traditë më të gjatë se 120 vjet, e specializuar në prodhimin e margarinës, yndyrnave dhe produkteve të ngjashme. Margarinat e tyre janë më të shiturat në Bashkimin Evropian (BE) dhe me të drejtë renditen ndër më cilësoret në botë, duke u bërë zgjedhja e parë e shumë bukëpjekësve dhe pastiçerëve në mbarë Evropën.\n\nNë gamën tonë theksojmë veçanërisht linjën e margarinës Opal, të njohur për performancat e jashtëzakonshme në përgatitjen e brumërave me shtresa, ëmbëlsirave, kremrave dhe produkteve të tjera pastiçerie. Përveç Opal-it, janë të pranishme edhe linja të tjera që u ofrojnë profesionistëve një gamë të gjerë zgjidhjesh për prodhimin e përditshëm dhe krijimin e recetave moderne.\n\nAjo që na lidh me Vandemoortele janë vlerat si cilësia, besueshmëria dhe inovacioni. Falë këtij partneriteti, tregu vendas fiton qasje në lëndë të para premium që vendosin standarde të reja në bukëpjekje dhe pastiçeri, duke u hapur profesionistëve mundësi për të përmirësuar njohuritë, teknikat dhe produktet përfundimtare.'
   },
   {
     locale:'ru',
-    text:'# Unigrà (MasterMartini) – 15 лет партнерства в индустрии маргарина и хлебопекарного сырья\n\n![Unigrà](/img/unigra1.png)\n\nНаше сотрудничество с итальянской компанией Unigrà S.p.A. длится почти 15 лет. Мы были первой компанией в Черногории, представившей их продукцию на местном рынке, внедряя инновационные решения в области кондитерского дела, хлебопечения и пищевой промышленности в целом. Благодаря этим долгосрочным отношениям мы развили стабильную дистрибьюторскую сеть и позволили многим профессионалам в Черногории работать с сырьем, соответствующим европейским стандартам.\n\n![Unigrà Products](/img/unigra2.png)\n\nUnigrà была основана в 1972 году в Конселиче, Италия, и специализируется на производстве сырья и полуфабрикатов на основе растительных жиров, маргарина, шоколада, начинок и UHT-топпингов. Их продукция предназначена как для промышленности, так и для ремесленного и HoReCa секторов, что обеспечивает гибкость использования в различных видах производства.\n\nКомпания инвестирует в устойчивость и безопасность продукции через стандартизированные процессы и контроль качества. Их ассортимент покрывает основные потребности современных пекарей и кондитеров, являясь функциональным решением для ежедневного производства.\n\nНаше сотрудничество основано на надежности, доступности продукции и понимании рынка. Благодаря раннему внедрению брендов Unigrà в Черногории, многие местные производители улучшили свои рецепты и процессы.\n\nМы сохраняем открытость к дальнейшему развитию этого партнерства, постоянно отслеживая потребности рынка и качество, поставляемое поставщиками.'
+    text:'# Vandemoortele – Эксклюзивный дистрибьютор в Черногории\n\n![Vandemoortele](/logos/van.png)\n\nНаша компания является эксклюзивным дистрибьютором бельгийской компании Vandemoortele на рынке Черногории, что позволяет нам предлагать отечественным профессионалам продукцию мирового класса.\n\nVandemoortele — ведущая европейская компания с более чем 120-летней традицией, специализирующаяся на производстве маргаринов, жиров и сопутствующей продукции. Их маргарины являются самыми продаваемыми в Европейском союзе (ЕС) и по праву относятся к числу самых качественных в мире, что делает их первым выбором для множества пекарей и кондитеров по всей Европе.\n\nВ нашем ассортименте мы особенно выделяем линию маргаринов Opal, известную своими выдающимися характеристиками при приготовлении слоёного теста, тортов, кремов и других кондитерских изделий. Помимо Opal, представлены и другие продуктовые линии, предоставляющие профессионалам широкий спектр решений для ежедневного производства и создания современных рецептур.\n\nТо, что связывает нас с Vandemoortele, — это ценности, такие как качество, надёжность и инновации. Благодаря этому партнёрству местный рынок получает доступ к первоклассному сырью, которое задаёт новые стандарты в хлебопекарной и кондитерской отрасли, а профессионалам открывает возможности для совершенствования знаний, техник и конечных продуктов.'
   },
   {
     locale:'en',
-    text:'# Unigrà (MasterMartini) – 15 Years of Partnership in Margarine and Bakery Raw Materials Industry\n\n![Unigrà](/img/unigra1.png)\n\nOur collaboration with the Italian company Unigrà S.p.A. has lasted for almost 15 years. We were the first company in Montenegro to introduce their products to the domestic market, bringing innovative solutions in the field of confectionery, bakery, and food industry in general. Through this long-term relationship, we have developed a stable distribution network and enabled numerous professionals in Montenegro to work with raw materials that meet European standards.\n\n![Unigrà Products](/img/unigra2.png)\n\nUnigrà was founded in 1972 in Conselice, Italy, and specializes in the production of raw materials and semi-finished products based on vegetable fats, margarine, chocolate, fillings, and UHT toppings. Their products are intended for both industry and the artisanal and HoReCa sectors, enabling flexible use in various types of production.\n\nThe company invests in product sustainability and safety through standardized processes and quality control. Their range covers the basic needs of modern bakers and confectioners, providing a functional solution for daily production.\n\nOur collaboration is based on reliability, product availability, and market understanding. Thanks to the early introduction of Unigrà brands in Montenegro, many local producers have improved their recipes and processes.\n\nWe maintain openness for further development of this partnership, while continuously monitoring market needs and the quality that comes from suppliers.'
+    text:'# Vandemoortele – Exclusive Distributor for Montenegro\n\n![Vandemoortele](/logos/van.png)\n\nOur company is the exclusive distributor of the Belgian company Vandemoortele for the Montenegrin market, which enables us to offer world-class products to local professionals.\n\nVandemoortele is a leading European company with a tradition of over 120 years, specializing in the production of margarines, fats, and related products. Their margarines are the best-selling ones in the European Union (EU) and are rightly ranked among the finest in the world, making them the first choice of numerous bakers and confectioners across Europe.\n\nIn our assortment, we particularly highlight the Opal line of margarines, renowned for their outstanding performance in the preparation of puff pastries, cakes, creams, and other confectionery products. In addition to Opal, other product lines are also available, offering professionals a wide range of solutions for daily production and the creation of modern recipes.\n\nWhat connects us with Vandemoortele are values such as quality, reliability, and innovation. Thanks to this partnership, the local market gains access to premium raw materials that set new standards in bakery and confectionery, while also providing professionals with opportunities to enhance their knowledge, techniques, and final products.'
   }
 ]
 
   if (partner === "ireks") {
     return (
-      <div className="container max-w-4xl flex flex-col gap-8 items-center mx-auto px-4 my-12">
+      <div className="container max-w-4xl min-h-screen flex flex-col gap-8 items-center mx-auto px-4 my-12">
         <MemoizedMarkdown id={`partners-description-${partner}-${locale}`} content={text1.find((t) => t.locale === locale)?.text || ""} />
       </div>
     );
   }
   if (partner === "BMM") {
     return (
-      <div className="container max-w-4xl flex flex-col gap-8 items-center mx-auto px-4 my-12">
+      <div className="container max-w-4xl min-h-screen flex flex-col gap-8 items-center mx-auto px-4 my-12">
         <MemoizedMarkdown id={`partners-description-${partner}-${locale}`} content={text2.find((t) => t.locale === locale)?.text || ""} />
       </div>
     );
   }
   if (partner === "dreidoppel") {
     return (
-      <div className="container max-w-4xl flex flex-col gap-8 items-center mx-auto px-4 my-12">
+      <div className="container max-w-4xl min-h-screen flex flex-col gap-8 items-center mx-auto px-4 my-12">
         <MemoizedMarkdown id={`partners-description-${partner}-${locale}`} content={drei.find((t) => t.locale === locale)?.text || ""} />
       </div>
     );
   }
   if (partner === "karntner") {
-    return  <div className="container max-w-4xl flex flex-col gap-8 items-center mx-auto px-4 my-12">
+    return  <div className="container max-w-4xl min-h-screen flex flex-col gap-8 items-center mx-auto px-4 my-12">
     <MemoizedMarkdown id={`partners-description-${partner}-${locale}`} content={text3.find((t) => t.locale === locale)?.text || ""} />
   </div>;
   }
   if (partner==="pobeda"){
-    return  <div className="container max-w-4xl flex flex-col gap-8 items-center mx-auto px-4 my-12">
+    return  <div className="container max-w-4xl min-h-screen flex flex-col gap-8 items-center mx-auto px-4 my-12">
     <MemoizedMarkdown id={`partners-description-${partner}-${locale}`} content={pobeda.find((t) => t.locale === locale)?.text || ""} />
   </div>;
   }
   if(partner==='glazir'){
-    return  <div className="container max-w-4xl flex flex-col gap-8 items-center mx-auto px-4 my-12">
+    return  <div className="container max-w-4xl min-h-screen flex flex-col gap-8 items-center mx-auto px-4 my-12">
     <MemoizedMarkdown id={`partners-description-${partner}-${locale}`} content={glazir.find((t) => t.locale === locale)?.text || ""} />
   </div>;
   }
   if(partner ==='takasago'){
-    return  <div className="container max-w-4xl flex flex-col gap-8 items-center mx-auto px-4 my-12">
+    return  <div className="container max-w-4xl min-h-screen flex flex-col gap-8 items-center mx-auto px-4 my-12">
     <MemoizedMarkdown id={`partners-description-${partner}-${locale}`} content={takasago.find((t) => t.locale === locale)?.text || ""} />
   </div>;
   }
-  if(partner ==='unigra'){
-    return  <div className="container max-w-4xl flex flex-col gap-8 items-center mx-auto px-4 my-12">
-    <MemoizedMarkdown id={`partners-description-${partner}-${locale}`} content={unigra.find((t) => t.locale === locale)?.text || ""} />
+  if(partner ==='van'){
+    return  <div className="container max-w-4xl min-h-screen flex flex-col gap-8 items-center mx-auto px-4 my-12">
+    <MemoizedMarkdown id={`partners-description-${partner}-${locale}`} content={van.find((t) => t.locale === locale)?.text || ""} />
   </div>;
   }
 }

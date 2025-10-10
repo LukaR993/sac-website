@@ -19,13 +19,16 @@ const logos = [
     ),
     url: "/partners/dreidoppel",
   },
+  
+
   {
-    name: "Logo 3",
+    name: "Logo 4",
     svg: (
-      <Image src="/logos/logo3.png" alt="Pobeda" width={190} height={72} />
+      <Image src="/logos/van.png" alt="Logo 4" width={200} height={31} />
     ),
-    url: "/partners/pobeda",
+    url: "/partners/van",
   },
+
   {
     name: "Logo 4",
     svg: (
@@ -51,11 +54,11 @@ const logos = [
   
 
   {
-    name: "Logo 4",
+    name: "Logo 3",
     svg: (
-      <Image src="/logos/unigra.png" alt="Logo 4" width={200} height={31} />
+      <Image src="/logos/logo3.png" alt="Pobeda" width={190} height={72} />
     ),
-    url: "/partners/unigra",
+    url: "/partners/pobeda",
   },
   {
     name: "Logo 8",

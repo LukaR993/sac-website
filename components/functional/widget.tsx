@@ -439,8 +439,7 @@ const translations: Record<string, WidgetConfig> = {
 
 export default function Widget(params: {locale: Locale}) {
     const [key, setKey] = useState(params.locale === "me" ? "c14f2d91-6005-4b3a-ab4c-30d621fde5b9" : params.locale === "en" ? "466cb5d3-77d3-480c-ac68-e465257f9517" :  params.locale === "ru" ? "fe5633e7-e212-413b-8b79-9b129dcdc6d7" : "35039ed9-5330-40cf-897d-2dee7d19d00b")
-    const [currentTranslations, setCurrentTranslations] = useState(translations[params.locale] || translations.en)
-    const [scriptLoaded, setScriptLoaded] = useState(false)
+   
     
     const getKeyForLocale = (locale: Locale) => {
       return locale === "me" ? "c14f2d91-6005-4b3a-ab4c-30d621fde5b9" : 
@@ -449,36 +448,24 @@ export default function Widget(params: {locale: Locale}) {
              "35039ed9-5330-40cf-897d-2dee7d19d00b"
     }
 
-    const initializeWidget = useCallback(() => {
-      if (typeof window !== 'undefined' && 'initWidget' in window) {
-        const initWidget = (window as { initWidget: (key: string, config: WidgetConfig) => void }).initWidget
-        initWidget(key, currentTranslations)
-      }
-    }, [key, currentTranslations])
+  useEffect(() => {
+    setKey(getKeyForLocale(params.locale))
+    // setCurrentTranslations(translations[params.locale] || translations.en)
+  }, [params.locale])
    
-    useEffect(() => {
-      const newKey = getKeyForLocale(params.locale)
-      const newTranslations = translations[params.locale] || translations.en
-      
-      setKey(newKey)
-      setCurrentTranslations(newTranslations)
-      
-      // If script is already loaded, reinitialize with new settings
-      if (scriptLoaded) {
-        initializeWidget()
-      }
-    }, [params.locale, scriptLoaded, initializeWidget])
 
-    const handleScriptLoad = () => {
-      setScriptLoaded(true)
-      initializeWidget()
-    }
-
+ 
   return (
     <Script
-      src="https://widget.starko.one/widget.js"
-      onLoad={handleScriptLoad}
+      src="https://chat.starko.one/widget.js"
+      strategy="afterInteractive"
+      onLoad={() => {
+        (window as any).Widget?.init({
+          props: { clientKey: key }
+        });
+      }}
     />
-  )
+  );
+
 }
 
