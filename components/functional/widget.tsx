@@ -1,7 +1,15 @@
 'use client'
 import { Locale } from '@/types'
 import Script from 'next/script'
-import React, { useEffect, useState, useCallback } from 'react'
+import React from 'react'
+
+declare global {
+  interface Window {
+    Widget?: {
+      init: (config: { props: { clientKey: string } }) => void;
+    };
+  }
+}
 
 interface WidgetConfig {
   customTexts: {
@@ -438,29 +446,20 @@ const translations: Record<string, WidgetConfig> = {
 };
 
 export default function Widget(params: {locale: Locale}) {
-    const [key, setKey] = useState(params.locale === "me" ? "c14f2d91-6005-4b3a-ab4c-30d621fde5b9" : params.locale === "en" ? "466cb5d3-77d3-480c-ac68-e465257f9517" :  params.locale === "ru" ? "fe5633e7-e212-413b-8b79-9b129dcdc6d7" : "35039ed9-5330-40cf-897d-2dee7d19d00b")
-   
-    
-    const getKeyForLocale = (locale: Locale) => {
-      return locale === "me" ? "c14f2d91-6005-4b3a-ab4c-30d621fde5b9" : 
-             locale === "en" ? "466cb5d3-77d3-480c-ac68-e465257f9517" : 
-             locale === "ru" ? "fe5633e7-e212-413b-8b79-9b129dcdc6d7" : 
-             "35039ed9-5330-40cf-897d-2dee7d19d00b"
-    }
+  const clientKeys: Record<Locale, string> = {
+    me: 'c14f2d91-6005-4b3a-ab4c-30d621fde5b9',
+    en: '466cb5d3-77d3-480c-ac68-e465257f9517',
+    ru: 'fe5633e7-e212-413b-8b79-9b129dcdc6d7',
+    sq: '35039ed9-5330-40cf-897d-2dee7d19d00b'
+  }
+  const key = clientKeys[params.locale] ?? clientKeys.en
 
-  useEffect(() => {
-    setKey(getKeyForLocale(params.locale))
-    // setCurrentTranslations(translations[params.locale] || translations.en)
-  }, [params.locale])
-   
-
- 
   return (
     <Script
       src="https://chat.starko.one/widget.js"
       strategy="afterInteractive"
       onLoad={() => {
-        (window as any).Widget?.init({
+        window.Widget?.init({
           props: { clientKey: key }
         });
       }}
