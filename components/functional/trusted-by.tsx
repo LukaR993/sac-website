@@ -54,16 +54,26 @@ const logos = [
   
 
   {
-    name: "Logo 3",
+    name: "Banatski klas",
     svg: (
-      <Image src="/logos/logo3.png" alt="Pobeda" width={190} height={72} />
+      <Image
+        src="/logos/Banatski klas-Logo.png"
+        alt="Banatski klas"
+        width={190}
+        height={72}
+      />
     ),
     url: "/partners/pobeda",
   },
   {
-    name: "Logo 8",
+    name: "Lubeca Marzipan",
     svg: (
-        <Image src="/logos/logo2.svg" alt="Logo 2" width={100} height={25} />
+      <Image
+        src="/logos/Lubeca-Logo.png"
+        alt="Lubeca Marzipan"
+        width={190}
+        height={72}
+      />
     ),
     url: "/partners/BMM",
   },
